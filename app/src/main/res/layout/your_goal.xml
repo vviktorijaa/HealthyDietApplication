@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/pineapple_blurred"
+            android:id="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:text="What is your goal?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/whatIsYourGoalText"
+            android:textSize="35sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="68dp" android:textColor="#517528" android:textStyle="bold"/>
+    <Button
+            android:text="Next"
+            android:layout_width="132dp"
+            android:layout_height="56dp" android:id="@+id/button6"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:backgroundTint="#4C9E45" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="112dp" android:onClick="nextActivity"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="208dp"
+            android:layout_height="38dp"
+            android:id="@+id/progressBar6"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="36dp" android:progress="84"
+    />
+    <RadioGroup
+            android:layout_width="233dp"
+            android:layout_height="174dp"
+            app:layout_constraintTop_toBottomOf="@+id/whatIsYourGoalText"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            app:layout_constraintHorizontal_bias="0.197" android:layout_marginTop="40dp" android:id="@+id/radioGroup2">
+        <RadioButton
+                android:text="Gain weight"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" android:id="@+id/gainWeight" android:textSize="22sp"
+                android:textColor="#517528"/>
+        <RadioButton
+                android:text="Maintain weight"
+                android:layout_width="match_parent"
+                android:layout_height="59dp" android:id="@+id/maintainWeight" android:textSize="22sp"
+                android:textColor="#517528"/>
+        <RadioButton
+                android:text="Lose weight"
+                android:layout_width="match_parent"
+                android:layout_height="58dp" android:id="@+id/loseWeight" android:textSize="22sp"
+                android:textColor="#517528"/>
+    </RadioGroup>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/chooseGoal"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp" android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.34"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

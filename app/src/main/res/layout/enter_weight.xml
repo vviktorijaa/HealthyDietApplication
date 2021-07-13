@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+>
+
+    <Button
+            android:text="Next"
+            android:layout_width="132dp"
+            android:layout_height="56dp" android:id="@+id/button5"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:backgroundTint="#4C9E45" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="112dp" android:onClick="nextActivity"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/pineapple_blurred"
+            android:id="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="208dp"
+            android:layout_height="38dp"
+            android:id="@+id/progressBar5"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="36dp" android:progress="70"
+    />
+    <TextView
+            android:text="...and weight in kg:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:textSize="35sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="68dp" android:textColor="#517528" android:textStyle="bold"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/enterWeight"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginTop="117dp"
+            android:layout_marginLeft="80dp" android:layout_marginStart="80dp" android:layout_marginRight="80dp"
+            android:layout_marginEnd="80dp" android:hint="Weight" android:textSize="22sp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/weightConstraint"
+            app:layout_constraintTop_toBottomOf="@+id/enterWeight"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="18sp" android:layout_marginTop="4dp" app:layout_constraintHorizontal_bias="0.418"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/enterValidWeight"
+            app:layout_constraintTop_toBottomOf="@+id/enterWeight" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="4dp"
+            app:layout_constraintHorizontal_bias="0.367" android:textSize="18sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

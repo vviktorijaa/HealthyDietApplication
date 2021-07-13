@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:onClick="nextActivity">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/pineapple_blurred"
+            android:id="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="208dp"
+            android:layout_height="38dp"
+            android:id="@+id/progressBar4"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="36dp" android:progress="56"
+    />
+    <Button
+            android:text="Next"
+            android:layout_width="132dp"
+            android:layout_height="56dp" android:id="@+id/button4"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:backgroundTint="#4C9E45" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="112dp" android:onClick="nextWeightActivity"/>
+    <TextView
+            android:layout_width="369dp"
+            android:layout_height="84dp"
+            android:text="Enter your height in cm:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#517528" android:textSize="35sp"
+            android:gravity="center" android:textStyle="bold" android:id="@+id/enterYourHeightText"
+            android:layout_marginTop="68dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/heightValue"
+            app:layout_constraintTop_toBottomOf="@+id/enterYourHeightText"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="80dp" android:layout_marginLeft="80dp" android:layout_marginStart="80dp"
+            android:layout_marginRight="80dp" android:layout_marginEnd="80dp" android:hint="Height"
+            android:textSize="22sp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/validHeight"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heightValue" android:layout_marginTop="4dp"
+            app:layout_constraintHorizontal_bias="0.432" android:textSize="18sp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/heightConstraint"
+            app:layout_constraintTop_toBottomOf="@+id/heightValue"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" android:textSize="18sp" app:layout_constraintHorizontal_bias="0.41"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

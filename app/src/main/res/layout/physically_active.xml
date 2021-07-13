@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/pineapple_blurred"
+            android:id="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:text="Are you physically active?"
+            android:layout_width="364dp"
+            android:layout_height="84dp" android:id="@+id/physicallyActive"
+            android:textSize="35sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="56dp" android:textColor="#517528" android:textStyle="bold"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp" android:gravity="center" app:layout_constraintHorizontal_bias="0.526"/>
+    <Button
+            android:text="Next"
+            android:layout_width="132dp"
+            android:layout_height="56dp" android:id="@+id/button7"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:backgroundTint="#4C9E45" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="112dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="208dp"
+            android:layout_height="38dp"
+            android:id="@+id/progressBar7"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="36dp" android:progress="100"
+    />
+    <RadioGroup
+            android:layout_width="344dp"
+            android:layout_height="240dp"
+            app:layout_constraintTop_toBottomOf="@+id/physicallyActive" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp" android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" android:layout_marginRight="32dp" android:layout_marginEnd="32dp"
+            android:id="@+id/radioGroup3">
+        <RadioButton
+                android:text="No"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" android:id="@+id/choice1" android:textSize="20sp"
+                android:textColor="#517528"/>
+        <RadioButton
+                android:text="I exercise less than once a week"
+                android:layout_width="match_parent"
+                android:layout_height="59dp" android:id="@+id/choice2" android:textSize="20sp"
+                android:textColor="#517528"/>
+        <RadioButton
+                android:text="I exercise 1-3 times a week"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" android:id="@+id/choice3" android:textColor="#517528"
+                android:textSize="20sp"/>
+        <RadioButton
+                android:text="I exercise more than 3 times a week"
+                android:layout_width="match_parent"
+                android:layout_height="59dp" android:id="@+id/choice4" android:textSize="20sp"
+                android:textColor="#517528"/>
+    </RadioGroup>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/exerciseConstraint"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="4dp"
+            app:layout_constraintHorizontal_bias="0.255"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

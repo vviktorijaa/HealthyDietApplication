@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/pineapple_blurred" android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:layout_width="369dp"
+            android:layout_height="84dp"
+            android:text="Enter your age:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#517528" android:textSize="35sp"
+            android:gravity="center" android:textStyle="bold" android:id="@+id/enterYourAgeText"
+            android:layout_marginTop="68dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="208dp"
+            android:layout_height="38dp"
+            android:id="@+id/progressBar3"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="36dp" android:progress="42"
+    />
+    <Button
+            android:text="Next"
+            android:layout_width="132dp"
+            android:layout_height="56dp" android:id="@+id/button3"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:backgroundTint="#4C9E45" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="112dp" android:onClick="nextActivity"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/ageInput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp" android:layout_marginRight="80dp" android:layout_marginEnd="80dp"
+            android:hint="Age" android:textSize="22sp" app:layout_constraintTop_toBottomOf="@+id/enterYourAgeText"
+            android:layout_marginTop="80dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/ageConstraint"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ageInput" app:layout_constraintHorizontal_bias="0.353"
+            android:textSize="18sp" android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/validAgeValue"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ageInput" android:textSize="18sp" android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.412"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
