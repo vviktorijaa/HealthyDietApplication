@@ -22,27 +22,27 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 if(binding.usernameText.length()==0 && binding.passwordText.length()==0){
                     binding.fillInTheBlanks.setText("Please, fill in the blanks.");
-                    binding.passwordContstraint.setText("");
+                    binding.passwordConstraint.setText("");
                 }
                 else if(binding.usernameText.length()!=0 && binding.passwordText.length()==0){
                     binding.fillInTheBlanks.setText("Please, fill in the blanks.");
-                    binding.passwordContstraint.setText("");
+                    binding.passwordConstraint.setText("");
                 }
                 else if(binding.usernameText.length()==0 && binding.passwordText.length()>8){
                     binding.fillInTheBlanks.setText("Please, fill in the blanks.");
-                    binding.passwordContstraint.setText("");
+                    binding.passwordConstraint.setText("");
                 }
                 else if(binding.usernameText.length()!=0 && (binding.passwordText.length()!=0 && binding.passwordText.length()<8)){
-                    binding.passwordContstraint.setText("Your password must contain at least 8 characters.");
+                    binding.passwordConstraint.setText("Your password must contain at least 8 characters.");
                     binding.fillInTheBlanks.setText("");
                 }
                 else if(binding.usernameText.length()==0 && (binding.passwordText.length()!=0 && binding.passwordText.length()<8)){
                     binding.fillInTheBlanks.setText("Please, fill in the blanks.");
-                    binding.passwordContstraint.setText("Your password must contain at least 8 characters.");
+                    binding.passwordConstraint.setText("Your password must contain at least 8 characters.");
                 }
                 else{
                     binding.fillInTheBlanks.setText("");
-                    binding.passwordContstraint.setText("");
+                    binding.passwordConstraint.setText("");
                     startActivity(new Intent(v.getContext(), YourGenderActivity.class));
                 }
             }

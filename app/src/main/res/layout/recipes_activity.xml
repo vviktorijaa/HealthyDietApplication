@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
 
+    <TextView
+            android:layout_width="136dp"
+            android:layout_height="86dp" android:id="@+id/recipesMenu3"
+            android:background="@drawable/rectangle3"
+            app:layout_constraintStart_toEndOf="@+id/profileMenu" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            android:onClick="recipesActivity"/>
+    <TextView
+            android:layout_width="135dp"
+            android:layout_height="86dp" android:id="@+id/profileMenu2"
+            android:background="@drawable/rectangle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:layout_width="136dp"
+            android:layout_height="86dp" android:id="@+id/homeMenu3"
+            android:background="@drawable/rectangle"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/profileMenu"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:onClick="homeActivity"/>
+    <TextView
+            android:text="Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/homeMenuText"
+            android:textColor="#DEDFBE" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/homeMenu3"
+            app:layout_constraintEnd_toStartOf="@+id/profileMenu2" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"/>
+    <TextView
+            android:text="My profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/profileMenuText4"
+            android:textColor="#DEDFBE" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/profileMenu2"
+            app:layout_constraintEnd_toStartOf="@+id/recipesMenu3" android:layout_marginBottom="8dp"/>
+    <TextView
+            android:text="Recipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/recipesMenuText"
+            android:textColor="@color/white" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/recipesMenu3"
+            app:layout_constraintEnd_toEndOf="@+id/recipesMenu3"
+            app:layout_constraintBottom_toBottomOf="@+id/recipesMenu3" android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

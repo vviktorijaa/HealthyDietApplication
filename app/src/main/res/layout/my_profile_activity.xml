@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
 
+    <ImageView
+            android:layout_width="414dp"
+            android:layout_height="734dp" app:srcCompat="@drawable/grape_blurred" android:id="@+id/imageView11"
+            tools:layout_editor_absoluteY="-11dp" tools:layout_editor_absoluteX="-2dp"/>
+    <TextView
+            android:layout_width="136dp"
+            android:layout_height="86dp" android:id="@+id/recipesMenu2"
+            android:background="@drawable/rectangle3"
+            app:layout_constraintStart_toEndOf="@+id/profileMenu" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            android:onClick="recipesActivity"/>
+    <TextView
+            android:text="Recipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/recipesMenuText2"
+            android:textColor="#DEDFBE" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@+id/recipesMenu2"
+            app:layout_constraintStart_toStartOf="@+id/recipesMenu2" android:layout_marginBottom="8dp"/>
+    <TextView
+            android:layout_width="135dp"
+            android:layout_height="86dp" android:id="@+id/profileMenu3"
+            android:background="@drawable/rectangle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="My profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/profileMenuText2"
+            android:textColor="@color/white" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/profileMenu3"
+            app:layout_constraintEnd_toStartOf="@+id/recipesMenu2" android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+    <TextView
+            android:layout_width="136dp"
+            android:layout_height="86dp" android:id="@+id/homeMenu2"
+            android:background="@drawable/rectangle"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/profileMenu"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:onClick="homeActivity"/>
+    <TextView
+            android:text="Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/homeMenuText3"
+            android:textColor="#DEDFBE" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileMenu3"
+            app:layout_constraintBottom_toBottomOf="@+id/homeMenu2" android:layout_marginBottom="8dp"/>
+    <TextView
+            android:text="Hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/helloProfile"
+            android:textSize="35sp" android:textColor="#78935A" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="332dp" android:layout_marginRight="332dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView11" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="80dp" android:layout_marginStart="80dp" android:layout_marginTop="40dp"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="Height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/heightProfile"
+            android:textSize="25sp" android:textColor="#78935A"
+            android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView11"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/helloProfile" android:layout_marginTop="32dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.14"/>
+    <TextView
+            android:text="Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/weightProfile"
+            android:textSize="25sp" android:textColor="#78935A" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView11"
+            android:textStyle="bold" app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="120dp" android:gravity="center"/>
+    <TextView
+            android:text="BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/bmiProfile"
+            android:textSize="25sp" android:textColor="#78935A"
+            android:textStyle="bold"
+            android:gravity="center" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="120dp" app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginRight="60dp" android:layout_marginEnd="60dp"/>
+    <TextView
+            android:text="175cm"
+            android:layout_width="75dp"
+            android:layout_height="32dp" android:id="@+id/userHeight"
+            android:textSize="22sp" android:textColor="#78935A" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="332dp" android:layout_marginRight="332dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView11"
+            android:layout_marginLeft="80dp" android:layout_marginStart="80dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/heightProfile" android:gravity="center"/>
+    <TextView
+            android:text="80kg"
+            android:layout_width="75dp"
+            android:layout_height="32dp" android:id="@+id/userWeight"
+            android:textSize="22sp" android:textColor="#78935A"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/weightProfile" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:gravity="center"/>
+    <TextView
+            android:text="26.1"
+            android:layout_width="75dp"
+            android:layout_height="32dp" android:id="@+id/userBmi"
+            android:textSize="22sp" android:textColor="#78935A"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/bmiProfile" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.869"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/userName"
+            android:textSize="35sp" android:textColor="#78935A" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
