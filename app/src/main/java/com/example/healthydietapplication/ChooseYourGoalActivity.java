@@ -30,4 +30,9 @@ public class ChooseYourGoalActivity extends AppCompatActivity {
             textChooseGoal.setText("Please, choose one option.");
         }
     }
+
+    public void previousActivity(View v){
+        Intent intent = new Intent(v.getContext(), EnterWeightActivity.class);
+        startActivity(intent);
+    }
 }

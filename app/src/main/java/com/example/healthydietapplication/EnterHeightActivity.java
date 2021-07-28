@@ -34,4 +34,9 @@ public class EnterHeightActivity extends AppCompatActivity {
             validHeight.setText("");
         }
     }
+
+    public void previousActivity(View v){
+        Intent intent = new Intent(v.getContext(), EnterAgeActivity.class);
+        startActivity(intent);
+    }
 }

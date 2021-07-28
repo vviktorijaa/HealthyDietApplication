@@ -6,21 +6,21 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RecipesActivity extends AppCompatActivity {
+public class Info1Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recipes_activity);
+        setContentView(R.layout.info1);
     }
 
-    public void homeActivity(View v){
+    public void close(View v) {
         Intent intent = new Intent(v.getContext(), HomeActivity.class);
         startActivity(intent);
     }
 
-    public void myProfileActivity(View v){
-        Intent intent = new Intent(v.getContext(), MyProfileActivity.class);
+    public void next(View v) {
+        Intent intent = new Intent(v.getContext(), Info2Activity.class);
         startActivity(intent);
     }
 }

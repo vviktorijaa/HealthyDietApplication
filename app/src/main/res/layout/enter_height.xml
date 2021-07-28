@@ -12,6 +12,12 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="56dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="45dp"
+            android:layout_height="49dp" app:srcCompat="@drawable/back" android:id="@+id/imageView12"
+            android:onClick="previousActivity" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp" android:layout_marginRight="320dp" android:layout_marginEnd="320dp"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="208dp"
@@ -38,7 +44,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:textColor="#517528" android:textSize="35sp"
             android:gravity="center" android:textStyle="bold" android:id="@+id/enterYourHeightText"
-            android:layout_marginTop="68dp"/>
+            android:layout_marginTop="85dp"/>
     <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"

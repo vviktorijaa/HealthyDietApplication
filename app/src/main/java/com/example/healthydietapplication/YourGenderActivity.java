@@ -30,4 +30,9 @@ public class YourGenderActivity extends AppCompatActivity {
             text.setText("Please, choose one option.");
         }
     }
+
+    public void previousActivity(View v){
+        Intent intent = new Intent(v.getContext(), MainActivity.class);
+        startActivity(intent);
+    }
 }

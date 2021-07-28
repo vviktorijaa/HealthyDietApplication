@@ -35,4 +35,9 @@ public class EnterWeightActivity extends AppCompatActivity {
             validWeight.setText("");
         }
     }
+
+    public void previousActivity(View v){
+        Intent intent = new Intent(v.getContext(), EnterHeightActivity.class);
+        startActivity(intent);
+    }
 }

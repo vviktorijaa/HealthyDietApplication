@@ -10,13 +10,14 @@
             android:background="@drawable/rectangle3"
             app:layout_constraintStart_toEndOf="@+id/profileMenu" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
-            android:onClick="recipesActivity"/>
+    />
     <TextView
             android:layout_width="135dp"
             android:layout_height="86dp" android:id="@+id/profileMenu2"
             android:background="@drawable/rectangle2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="myProfileActivity"/>
     <TextView
             android:layout_width="136dp"
             android:layout_height="86dp" android:id="@+id/homeMenu3"
@@ -49,4 +50,16 @@
             app:layout_constraintEnd_toEndOf="@+id/recipesMenu3"
             app:layout_constraintBottom_toBottomOf="@+id/recipesMenu3" android:layout_marginBottom="8dp"
             android:textStyle="bold"/>
+    <ImageView
+            android:layout_width="68dp"
+            android:layout_height="53dp" app:srcCompat="@drawable/home_kremovo" android:id="@+id/imageView20"
+            app:layout_constraintBottom_toBottomOf="@+id/homeMenu3"
+            app:layout_constraintEnd_toStartOf="@+id/profileMenu2"
+            app:layout_constraintStart_toStartOf="@+id/homeMenu3" android:layout_marginBottom="30dp"/>
+    <ImageView
+            android:layout_width="74dp"
+            android:layout_height="52dp" app:srcCompat="@drawable/my_profile_kremovo"
+            android:id="@+id/imageView35" app:layout_constraintBottom_toBottomOf="@+id/profileMenu2"
+            app:layout_constraintEnd_toEndOf="@+id/profileMenu2"
+            app:layout_constraintStart_toStartOf="@+id/profileMenu2" android:layout_marginBottom="30dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

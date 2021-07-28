@@ -31,4 +31,9 @@ public class PhysicallyActiveActivity extends AppCompatActivity {
             constraint.setText("Please, choose one option.");
         }
     }
+
+    public void previousActivity(View v){
+        Intent intent = new Intent(v.getContext(), ChooseYourGoalActivity.class);
+        startActivity(intent);
+    }
 }

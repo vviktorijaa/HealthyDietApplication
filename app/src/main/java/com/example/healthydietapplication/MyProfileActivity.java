@@ -19,8 +19,13 @@ public class MyProfileActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /*public void recipesActivity(View v){
+    public void recipesActivity(View v){
         Intent intent = new Intent(v.getContext(), RecipesActivity.class);
         startActivity(intent);
-    }*/
+    }
+
+    public void profileSettings(View v){
+        Intent intent = new Intent(v.getContext(), RecipesActivity.class);
+        startActivity(intent);
+    }
 }

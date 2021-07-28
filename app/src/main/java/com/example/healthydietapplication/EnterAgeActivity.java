@@ -35,4 +35,9 @@ public class EnterAgeActivity extends AppCompatActivity {
             validAgeValue.setText("");
         }
     }
+
+    public void previousActivity(View v){
+        Intent intent = new Intent(v.getContext(), YourGenderActivity.class);
+        startActivity(intent);
+    }
 }

@@ -25,6 +25,15 @@
         <activity android:name=".HomeActivity"/>
         <activity android:name=".MyProfileActivity"/>
         <activity android:name=".RecipesActivity"/>
+        <activity android:name=".HomeSettingsActivity"/>
+        <activity android:name=".Info2Activity"/>
+        <activity android:name=".Info1Activity"/>
+        <activity android:name=".Info3Activity"/>
+        <activity android:name=".Info4Activity"/>
+        <activity android:name=".Info5Activity"/>
+        <activity android:name=".Info6Activity"/>
+        <activity android:name=".Info7Activity"/>
+        <activity android:name=".ProfileSettingsActivity"/>
     </application>
 
 </manifest>
