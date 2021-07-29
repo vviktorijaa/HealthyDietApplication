@@ -106,6 +106,12 @@
             app:layout_constraintStart_toEndOf="@+id/profileMenu" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
             android:onClick="recipesActivity"/>
+    <ImageView
+            android:layout_width="62dp"
+            android:layout_height="47dp" app:srcCompat="@drawable/kapa_krem" android:id="@+id/imageView43"
+            app:layout_constraintStart_toStartOf="@+id/recipesMenu"
+            app:layout_constraintEnd_toEndOf="@+id/recipesMenu"
+            app:layout_constraintBottom_toBottomOf="@+id/recipesMenu" android:layout_marginBottom="30dp"/>
     <TextView
             android:text="Recipes"
             android:layout_width="wrap_content"

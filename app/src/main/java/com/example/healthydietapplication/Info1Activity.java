@@ -19,7 +19,7 @@ public class Info1Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void next(View v) {
+    public void next2(View v) {
         Intent intent = new Intent(v.getContext(), Info2Activity.class);
         startActivity(intent);
     }

@@ -36,6 +36,13 @@
             app:layout_constraintBottom_toBottomOf="@+id/homeMenu4" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/homeMenu4" android:layout_marginBottom="8dp"/>
     <TextView
+            android:text="Recipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/homeMenuText8"
+            android:textColor="#DEDFBE" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/recipesMenu4" android:layout_marginBottom="8dp"/>
+    <TextView
             android:text="My profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/homeMenuText4"
@@ -55,4 +62,9 @@
             app:layout_constraintStart_toStartOf="@+id/homeMenu4"
             app:layout_constraintEnd_toStartOf="@+id/profileMenu5"
             app:layout_constraintBottom_toBottomOf="@+id/homeMenu4" android:layout_marginBottom="30dp"/>
+    <ImageView
+            android:layout_width="74dp"
+            android:layout_height="52dp" app:srcCompat="@drawable/kapa_krem" android:id="@+id/imageView46"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/recipesMenu4"
+            app:layout_constraintEnd_toEndOf="@+id/recipesMenu4" android:layout_marginBottom="30dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

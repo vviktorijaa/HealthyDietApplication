@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   android:layout_width="match_parent"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
     <ImageView
@@ -14,25 +14,26 @@
             android:layout_width="334dp"
             android:layout_height="165dp" android:id="@+id/textView31"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="108dp"
-            android:textSize="25sp" android:textColor="#517528" android:gravity="center"
-            app:layout_constraintHorizontal_bias="0.496"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="85dp"
+            android:textSize="24sp" android:textColor="#517528" android:gravity="center"
+            app:layout_constraintHorizontal_bias="0.496" android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" android:layout_marginLeft="20dp" android:layout_marginStart="20dp"/>
     <TextView
             android:text="NEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView30"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="40dp" android:layout_marginRight="40dp" android:layout_marginEnd="40dp"
-            android:textSize="25sp" android:textColor="#517528" android:onClick="next" android:textStyle="bold"/>
+            android:textSize="25sp" android:textColor="#517528" android:onClick="next"/>
     <TextView
             android:text="BACK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView29"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="48dp"
-            android:textSize="25sp" android:textColor="#517528" android:onClick="back"
+            android:textSize="25sp" android:textColor="#517528" android:onClick="back6"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp" android:textStyle="bold"/>
+            android:layout_marginStart="40dp"/>
     <TextView
             android:text="X"
             android:layout_width="wrap_content"
@@ -41,4 +42,9 @@
             android:textSize="35sp" android:layout_marginTop="40dp" android:layout_marginRight="40dp"
             android:layout_marginEnd="40dp" android:textColor="#517528" android:textStyle="bold"
             android:onClick="close"/>
+    <ImageView
+            android:layout_width="256dp"
+            android:layout_height="388dp" app:srcCompat="@drawable/info6" android:id="@+id/imageView52"
+            app:layout_constraintBottom_toTopOf="@+id/textView31" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -62,4 +62,9 @@
             android:id="@+id/imageView35" app:layout_constraintBottom_toBottomOf="@+id/profileMenu2"
             app:layout_constraintEnd_toEndOf="@+id/profileMenu2"
             app:layout_constraintStart_toStartOf="@+id/profileMenu2" android:layout_marginBottom="30dp"/>
+    <ImageView
+            android:layout_width="72dp"
+            android:layout_height="53dp" app:srcCompat="@drawable/kapa_bela" android:id="@+id/imageView45"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/recipesMenu3" android:layout_marginBottom="30dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

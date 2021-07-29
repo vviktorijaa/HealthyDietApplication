@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   android:layout_width="match_parent"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
     <ImageView
@@ -11,28 +11,30 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
     <TextView
-            android:text="...and this is the settings button, a place where you can find out some details about adding calories and water."
+            android:text="...and this is the settings button, a place where you can adjust calories and water settings according to your preferences."
             android:layout_width="333dp"
             android:layout_height="163dp" android:id="@+id/textView14"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="110dp"
-            android:textSize="25sp" android:textColor="#517528" android:gravity="center"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="100dp"
+            android:textSize="25sp" android:textColor="#517528" android:gravity="center"
+            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" app:layout_constraintHorizontal_bias="0.526"/>
     <TextView
             android:text="NEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView13"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="40dp" android:layout_marginRight="40dp" android:layout_marginEnd="40dp"
-            android:textSize="25sp" android:textColor="#517528" android:onClick="next" android:textStyle="bold"/>
+            android:textSize="25sp" android:textColor="#517528" android:onClick="next4"/>
     <TextView
             android:text="BACK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView12"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="48dp"
-            android:textSize="25sp" android:textColor="#517528" android:onClick="back"
+            android:textSize="25sp" android:textColor="#517528" android:onClick="back2"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp" android:textStyle="bold"/>
+            android:layout_marginStart="40dp"/>
     <TextView
             android:text="X"
             android:layout_width="wrap_content"
@@ -41,4 +43,10 @@
             android:textSize="35sp" android:layout_marginTop="40dp" android:layout_marginRight="40dp"
             android:layout_marginEnd="40dp" android:textColor="#517528" android:textStyle="bold"
             android:onClick="close"/>
+    <ImageView
+            android:layout_width="230dp"
+            android:layout_height="367dp" app:srcCompat="@drawable/info2" android:id="@+id/imageView49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/textView14"
+            android:layout_marginBottom="15dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

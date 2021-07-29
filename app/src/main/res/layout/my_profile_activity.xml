@@ -8,6 +8,14 @@
             android:layout_width="414dp"
             android:layout_height="734dp" app:srcCompat="@drawable/grape_blurred" android:id="@+id/imageView11"
             tools:layout_editor_absoluteY="-11dp" tools:layout_editor_absoluteX="-2dp"/>
+    <Button
+            android:text="Log out"
+            android:layout_width="128dp"
+            android:layout_height="72dp" android:id="@+id/addCaloriesButton2"
+            app:backgroundTint="#517528" android:textSize="18sp"
+            android:onClick="addCalories"
+            tools:layout_editor_absoluteX="72dp" tools:layout_editor_absoluteY="294dp"
+            android:textColor="@color/white"/>
     <TextView
             android:layout_width="136dp"
             android:layout_height="86dp" android:id="@+id/recipesMenu2"
@@ -91,6 +99,11 @@
             app:layout_constraintBottom_toBottomOf="@+id/profileMenu3"
             app:layout_constraintStart_toStartOf="@+id/profileMenu3"
             app:layout_constraintEnd_toEndOf="@+id/profileMenu3" android:layout_marginBottom="30dp"/>
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="52dp" app:srcCompat="@drawable/kapa_krem" android:id="@+id/imageView44"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@+id/recipesMenu2"
+            app:layout_constraintStart_toStartOf="@+id/recipesMenu2" android:layout_marginBottom="30dp"/>
     <TextView
             android:text="BMI"
             android:layout_width="wrap_content"

@@ -24,7 +24,7 @@ public class Info7Activity extends AppCompatActivity {
 //        startActivity(intent);
 //    }
 
-    public void back(View v) {
+    public void back6(View v) {
         Intent intent = new Intent(v.getContext(), Info6Activity.class);
         startActivity(intent);
     }
