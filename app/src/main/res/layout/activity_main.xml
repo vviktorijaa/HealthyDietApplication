@@ -14,11 +14,12 @@
             app:layout_constraintHorizontal_bias="0.498" app:backgroundTint="#4C9E45" android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="112dp"/>
-    <ImageView
-            android:layout_width="411dp"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/pineapple_blurred" android:id="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pineapple_blurred"
+            android:id="@+id/linear_layout"
+            android:orientation="vertical" />
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="208dp"
@@ -71,7 +72,7 @@
             android:layout_width="253dp"
             android:layout_height="56dp" android:id="@+id/passwordConstraint"
             android:textColor="#E20000" android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView" app:layout_constraintTop_toBottomOf="@+id/passwordText"
+            app:layout_constraintTop_toBottomOf="@+id/passwordText"
             android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.443"
     />
 
