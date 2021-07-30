@@ -4,18 +4,19 @@
                                                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/limeta_blurred" android:id="@+id/imageView32"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/limeta_blurred"
+            android:id="@+id/linear_layout"
+            android:orientation="vertical" />
     <TextView
             android:text="Healthy Diet cares for you and provides you with the information about the ideal calorie intake for each meal of the day."
             android:layout_width="334dp"
             android:layout_height="157dp" android:id="@+id/textView27"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="108dp"
-            android:textSize="25sp" android:textColor="#517528" android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="120dp"
+            android:textSize="23sp" android:textColor="#517528" android:gravity="center"
             app:layout_constraintHorizontal_bias="0.496" android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"/>
     <TextView
@@ -24,22 +25,14 @@
             android:layout_height="wrap_content" android:id="@+id/textView26"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="40dp" android:layout_marginRight="40dp" android:layout_marginEnd="40dp"
-            android:textSize="25sp" android:textColor="#517528" android:onClick="next7"/>
-    <TextView
-            android:text="X"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView24"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:textSize="35sp" android:layout_marginTop="40dp" android:layout_marginRight="40dp"
-            android:layout_marginEnd="40dp" android:textColor="#517528" android:textStyle="bold"
-            android:onClick="close"/>
+            android:textSize="20sp" android:textColor="#517528" android:onClick="next7"/>
     <TextView
             android:text="BACK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView25"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="48dp"
-            android:textSize="25sp" android:textColor="#517528" android:onClick="back5"
+            android:textSize="20sp" android:textColor="#517528" android:onClick="back5"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="40dp"
             android:layout_marginStart="40dp"/>
     <TextView
@@ -47,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView23"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:textSize="35sp" android:layout_marginTop="40dp" android:layout_marginRight="40dp"
-            android:layout_marginEnd="40dp" android:textColor="#517528" android:textStyle="bold"
+            android:textSize="30sp" android:layout_marginTop="20dp" android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" android:textColor="#517528" android:textStyle="bold"
             android:onClick="close"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
