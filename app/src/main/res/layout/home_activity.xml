@@ -6,11 +6,35 @@
                                                    android:layout_height="match_parent"
 >
 
-    <ImageView
-            android:layout_width="533dp"
-            android:layout_height="621dp" app:srcCompat="@drawable/avocado_blurred" android:id="@+id/imageView8"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/avocado_blurred"
+            android:id="@+id/linear_layout"
+            android:orientation="vertical" />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="370dp"
+            android:layout_height="133dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" android:gravity="center" android:id="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="80dp">
+        <TextView
+                android:text="consumCalories"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content" android:id="@+id/consumCalories" android:layout_weight="1"
+                android:gravity="right" android:textSize="20sp" android:textColor="#517528"/>
+        <TextView
+                android:text="/"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView44" android:layout_weight="1"
+                android:gravity="center" android:textSize="25sp" android:textColor="#517528"/>
+        <TextView
+                android:text="maxCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/maxCalories" android:layout_weight="1"
+                android:gravity="start" android:textSize="20sp" android:textColor="#517528"/>
+    </LinearLayout>
     <ImageView
             android:layout_width="46dp"
             android:layout_height="51dp" app:srcCompat="@drawable/info_symbol" android:id="@+id/imageView17"
@@ -24,27 +48,6 @@
             android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"
             android:onClick="settingsActivity"/>
 
-    <TextView
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/consumedCalories"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="108dp"
-            android:textColor="#78935a" android:textStyle="bold"
-            android:textSize="25sp"
-            android:layout_marginLeft="172dp"
-            android:layout_marginStart="172dp"/>
-    <TextView
-            android:text="/2000"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/maxCalories"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="108dp"
-            android:textColor="#78935a" android:textStyle="bold"
-            android:textSize="25sp"
-            app:layout_constraintStart_toEndOf="@+id/consumedCalories" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.082"
-            android:layout_marginRight="120dp" android:layout_marginEnd="120dp"/>
     <Button
             android:text="Add calories"
             android:layout_width="128dp"
@@ -52,8 +55,8 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="60dp" android:layout_marginStart="60dp"
             app:backgroundTint="#7CB877" android:textSize="18sp"
-            android:onClick="addCalories" app:layout_constraintTop_toBottomOf="@+id/maxCalories"
-            android:layout_marginTop="90dp"/>
+            android:onClick="addCalories"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" android:layout_marginTop="20dp"/>
     <Button
             android:text="Add water"
             android:layout_width="127dp"
@@ -61,47 +64,48 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="60dp"
             android:layout_marginRight="60dp"
             app:backgroundTint="#5DB88E" android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/maxCalories" android:layout_marginTop="90dp"
-            android:onClick="addWater"/>
+            android:onClick="addWater" app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:layout_marginTop="20dp"/>
     <ScrollView
-            android:layout_width="388dp"
-            android:layout_height="272dp"
+            android:layout_width="384dp"
+            android:layout_height="234dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/addWaterButton" android:layout_marginTop="35dp"
-            android:id="@+id/scrollView2">
+            app:layout_constraintTop_toBottomOf="@+id/addWaterButton" android:layout_marginTop="100dp"
+            android:id="@+id/scrollView2" app:layout_constraintBottom_toTopOf="@+id/profileMenu4"
+            android:layout_marginBottom="100dp">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical">
             <TextView
                     android:text="Recommended calories per meal"
-                    android:layout_width="273dp"
+                    android:layout_width="277dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_height="wrap_content" android:id="@+id/textView5" android:textSize="25sp"
-                    android:textColor="#517528" android:textStyle="bold"/>
+                    android:layout_height="84dp" android:id="@+id/textView5" android:textSize="25sp"
+                    android:textColor="#517528" android:textStyle="bold" android:gravity="bottom"/>
             <ImageView
-                    android:layout_width="272dp"
+                    android:layout_width="248dp"
                     android:layout_marginLeft="30dp"
                     android:layout_height="wrap_content" app:srcCompat="@drawable/breakfast_recommended"
                     android:id="@+id/imageView21"/>
             <ImageView
-                    android:layout_width="275dp"
+                    android:layout_width="247dp"
                     android:layout_marginLeft="30dp"
                     android:layout_height="wrap_content" app:srcCompat="@drawable/lunch_recommended"
                     android:id="@+id/imageView22"/>
             <ImageView
-                    android:layout_width="278dp"
+                    android:layout_width="247dp"
                     android:layout_marginLeft="30dp"
                     android:layout_height="wrap_content" app:srcCompat="@drawable/dinner_recommended"
                     android:id="@+id/imageView23"/>
             <ImageView
-                    android:layout_width="278dp"
+                    android:layout_width="247dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_height="111dp" app:srcCompat="@drawable/snacks_recommended"
+                    android:layout_height="109dp" app:srcCompat="@drawable/snacks_recommended"
                     android:id="@+id/imageView24"/>
         </LinearLayout>
     </ScrollView>
     <TextView
             android:layout_width="135dp"
-            android:layout_height="82dp" android:id="@+id/recipesMenu"
+            android:layout_height="80dp" android:id="@+id/recipesMenu"
             android:background="@drawable/rectangle3"
             app:layout_constraintStart_toEndOf="@+id/profileMenu" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
@@ -142,7 +146,7 @@
             app:layout_constraintEnd_toEndOf="@+id/profileMenu4"
             app:layout_constraintStart_toStartOf="@+id/profileMenu4" android:layout_marginBottom="30dp"/>
     <TextView
-            android:layout_width="131dp"
+            android:layout_width="135dp"
             android:layout_height="80dp" android:id="@+id/homeMenu"
             android:background="@drawable/rectangle"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/profileMenu"

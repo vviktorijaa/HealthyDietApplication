@@ -9,10 +9,10 @@
             android:layout_height="match_parent"
             android:background="@drawable/avocado_blurred"
             android:id="@+id/linear_layout"
-            android:orientation="vertical" />
+            android:orientation="vertical" tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp"/>
     <TextView
             android:layout_width="135dp"
-            android:layout_height="82dp" android:id="@+id/recipesMenu5"
+            android:layout_height="80dp" android:id="@+id/recipesMenu5"
             android:background="@drawable/rectangle3"
             app:layout_constraintStart_toEndOf="@+id/profileMenu" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
@@ -32,7 +32,7 @@
             app:layout_constraintEnd_toEndOf="@+id/profileMenu6"
             app:layout_constraintBottom_toBottomOf="@+id/profileMenu6" android:layout_marginBottom="30dp"/>
     <TextView
-            android:layout_width="131dp"
+            android:layout_width="135dp"
             android:layout_height="80dp" android:id="@+id/homeMenu5"
             android:background="@drawable/rectangle"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/profileMenu"

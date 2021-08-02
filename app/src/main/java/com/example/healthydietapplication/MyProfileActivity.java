@@ -25,7 +25,7 @@ public class MyProfileActivity extends AppCompatActivity {
     }
 
     public void profileSettings(View v){
-        Intent intent = new Intent(v.getContext(), RecipesActivity.class);
+        Intent intent = new Intent(v.getContext(), ProfileSettingsActivity.class);
         startActivity(intent);
     }
 }

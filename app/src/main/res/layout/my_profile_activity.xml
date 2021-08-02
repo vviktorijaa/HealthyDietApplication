@@ -4,18 +4,74 @@
                                                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
-    <ImageView
-            android:layout_width="414dp"
-            android:layout_height="734dp" app:srcCompat="@drawable/grape_blurred" android:id="@+id/imageView11"
-            tools:layout_editor_absoluteY="-11dp" tools:layout_editor_absoluteX="-2dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grape_blurred"
+            android:id="@+id/linear_layout"
+            android:orientation="vertical" />
     <Button
             android:text="Log out"
-            android:layout_width="128dp"
-            android:layout_height="72dp" android:id="@+id/addCaloriesButton2"
+            android:layout_width="125dp"
+            android:layout_height="69dp" android:id="@+id/addCaloriesButton2"
             app:backgroundTint="#517528" android:textSize="18sp"
             android:onClick="addCalories"
-            tools:layout_editor_absoluteX="72dp" tools:layout_editor_absoluteY="294dp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toTopOf="@+id/profileMenu3"
+            android:layout_marginBottom="20dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="346dp"
+            android:layout_height="118dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="100dp" android:gravity="center"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="143dp"
+                android:layout_height="match_parent" android:gravity="center">
+            <TextView
+                    android:text="Height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView24" android:gravity="center"
+                    android:textColor="#517528" android:textSize="25sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView32" android:gravity="center"
+                    android:textSize="23sp" android:textColor="#517528"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="140dp"
+                android:layout_height="match_parent" android:gravity="center">
+            <TextView
+                    android:text="Weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView34" android:gravity="center"
+                    android:textColor="#517528" android:textSize="25sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView33" android:gravity="center"
+                    android:textSize="23sp" android:textColor="#517528"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="128dp"
+                android:layout_height="match_parent" android:gravity="center">
+            <TextView
+                    android:text="BMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView36" android:gravity="center"
+                    android:textColor="#517528" android:textSize="25sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView35" android:gravity="center"
+                    android:textSize="23sp" android:textColor="#517528"/>
+        </LinearLayout>
+    </LinearLayout>
     <TextView
             android:layout_width="136dp"
             android:layout_height="86dp" android:id="@+id/recipesMenu2"
@@ -59,39 +115,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/profileMenu3"
             app:layout_constraintBottom_toBottomOf="@+id/homeMenu2" android:layout_marginBottom="8dp"/>
-    <TextView
-            android:text="Hello"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/helloProfile"
-            android:textSize="35sp" android:textColor="#517528" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="332dp" android:layout_marginRight="332dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView11" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="80dp" android:layout_marginStart="80dp" android:layout_marginTop="40dp"
-            android:textStyle="bold"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="273dp"
+            android:layout_height="63dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:gravity="center">
+        <TextView
+                android:text="Hello"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content" android:id="@+id/HelloProfile" android:layout_weight="1"
+                android:textColor="#517528" android:textSize="35sp" android:textStyle="bold"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/userName" android:layout_weight="1"
+                android:textColor="#517528" android:textSize="35sp" android:textStyle="bold"/>
+    </LinearLayout>
     <ImageView
             android:layout_width="69dp"
             android:layout_height="54dp" app:srcCompat="@drawable/home_kremovo" android:id="@+id/imageView19"
             app:layout_constraintBottom_toBottomOf="@+id/homeMenu2" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/homeMenu2" android:layout_marginBottom="30dp"/>
-    <TextView
-            android:text="Height"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/heightProfile"
-            android:textSize="25sp" android:textColor="#517528"
-            android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView11"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/helloProfile" android:layout_marginTop="32dp"
-            android:gravity="center"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.14"/>
-    <TextView
-            android:text="Weight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/weightProfile"
-            android:textSize="25sp" android:textColor="#517528" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView11"
-            android:textStyle="bold" app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="120dp" android:gravity="center"/>
     <ImageView
             android:layout_width="71dp"
             android:layout_height="51dp" app:srcCompat="@drawable/my_profile_belo"
@@ -104,54 +149,10 @@
             android:layout_height="52dp" app:srcCompat="@drawable/kapa_krem" android:id="@+id/imageView44"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@+id/recipesMenu2"
             app:layout_constraintStart_toStartOf="@+id/recipesMenu2" android:layout_marginBottom="30dp"/>
-    <TextView
-            android:text="BMI"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/bmiProfile"
-            android:textSize="25sp" android:textColor="#517528"
-            android:textStyle="bold"
-            android:gravity="center" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="120dp" app:layout_constraintHorizontal_bias="1.0"
-            android:layout_marginRight="60dp" android:layout_marginEnd="60dp"/>
-    <TextView
-            android:text="175cm"
-            android:layout_width="75dp"
-            android:layout_height="32dp" android:id="@+id/userHeight"
-            android:textSize="22sp" android:textColor="#517528" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="332dp" android:layout_marginRight="332dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView11"
-            android:layout_marginLeft="80dp" android:layout_marginStart="80dp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/heightProfile" android:gravity="center"/>
-    <TextView
-            android:text="80kg"
-            android:layout_width="75dp"
-            android:layout_height="32dp" android:id="@+id/userWeight"
-            android:textSize="22sp" android:textColor="#517528"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/weightProfile" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:gravity="center"/>
-    <TextView
-            android:text="26.1"
-            android:layout_width="75dp"
-            android:layout_height="32dp" android:id="@+id/userBmi"
-            android:textSize="22sp" android:textColor="#517528"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent" android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@+id/bmiProfile" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.869"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/userName"
-            android:textSize="35sp" android:textColor="#517528" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="40dp"
-            android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4"/>
     <ImageView
-            android:layout_width="63dp"
-            android:layout_height="57dp" app:srcCompat="@drawable/settings" android:id="@+id/imageView9"
-            tools:layout_editor_absoluteX="317dp" tools:layout_editor_absoluteY="28dp"
-            android:onClick="profileSettings"/>
+            android:layout_width="55dp"
+            android:layout_height="51dp" app:srcCompat="@drawable/settings" android:id="@+id/imageView9"
+            android:onClick="profileSettings" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="40dp" android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

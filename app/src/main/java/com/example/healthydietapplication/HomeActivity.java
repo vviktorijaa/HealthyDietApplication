@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private int kcal = 0;
+    private String kcal;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,7 +52,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
     public void addCalories(View v) {
-        TextView consumedCalories = findViewById(R.id.consumedCalories);
+        TextView consumedCalories = findViewById(R.id.consumCalories);
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Add calories");
@@ -64,11 +64,10 @@ public class HomeActivity extends AppCompatActivity {
 
         alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
-                if (input.getText() != null) {
-                    kcal = Integer.parseInt(input.getText().toString());
-                    consumedCalories.setText(kcal);
-                    System.out.println(kcal);
-                }
+//                if (!(input.getText().toString().matches(""))) {
+//                    kcal = input.getText().toString();
+//                    consumedCalories.setText(kcal);
+//                }
             }
         });
 
