@@ -73,7 +73,12 @@
             android:layout_height="56dp" android:id="@+id/passwordConstraint"
             android:textColor="#E20000" android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordText"
+<<<<<<< HEAD
             android:layout_marginTop="8dp"
             android:layout_marginLeft="70dp" android:layout_marginStart="70dp"/>
+=======
+            android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.443"
+    />
+>>>>>>> ff34182e934990959ab2d034de708795d1c8bc44
 
 </androidx.constraintlayout.widget.ConstraintLayout>
