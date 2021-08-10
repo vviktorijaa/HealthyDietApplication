@@ -9,11 +9,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/avocado_blurred"
             android:id="@+id/linear_layout"
-<<<<<<< HEAD
             android:orientation="vertical" tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp"/>
-=======
-            android:orientation="vertical" />
->>>>>>> ff34182e934990959ab2d034de708795d1c8bc44
+
     <TextView
             android:layout_width="135dp"
             android:layout_height="80dp" android:id="@+id/recipesMenu5"

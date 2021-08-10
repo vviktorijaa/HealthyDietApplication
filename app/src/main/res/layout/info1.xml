@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:textSize="30sp" android:layout_marginTop="20dp" android:layout_marginRight="20dp"
             android:layout_marginEnd="20dp" android:textColor="#517528" android:textStyle="bold"
-            android:onClick="close"/>
+            android:onClick="close1"/>
     <TextView
             android:text="NEXT"
             android:layout_width="wrap_content"

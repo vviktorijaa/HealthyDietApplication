@@ -14,7 +14,7 @@ public class Info1Activity extends AppCompatActivity {
         setContentView(R.layout.info1);
     }
 
-    public void close(View v) {
+    public void close1(View v) {
         Intent intent = new Intent(v.getContext(), HomeActivity.class);
         startActivity(intent);
     }

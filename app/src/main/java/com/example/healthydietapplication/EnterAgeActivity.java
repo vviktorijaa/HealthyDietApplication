@@ -1,11 +1,15 @@
 package com.example.healthydietapplication;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import static android.util.Log.d;
 
 public class EnterAgeActivity extends AppCompatActivity {
 
@@ -26,6 +30,11 @@ public class EnterAgeActivity extends AppCompatActivity {
                 ageConstraint.setText("");
             }
             else{
+                SharedPreferences preferences = getSharedPreferences("database", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("Age", age.toString());
+                editor.apply();
+
                 Intent intent = new Intent(v.getContext(), EnterHeightActivity.class);
                 startActivity(intent);
             }

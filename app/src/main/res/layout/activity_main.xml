@@ -19,7 +19,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/pineapple_blurred"
             android:id="@+id/linear_layout"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+    </LinearLayout>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="208dp"
@@ -39,6 +40,12 @@
             android:textColor="#517528" android:textSize="28sp"
             android:gravity="center" android:textStyle="bold" android:id="@+id/usernamePassText"
             app:layout_constraintHorizontal_bias="0.619"/>
+    <TextView
+            android:layout_width="253dp"
+            android:layout_height="56dp" android:id="@+id/passwordConstraint"
+            android:textColor="#E20000" android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/passwordText" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="70dp" android:layout_marginStart="70dp" android:layout_marginTop="10dp"/>
     <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -68,15 +75,7 @@
             app:layout_constraintTop_toBottomOf="@+id/passwordText" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.229"
             android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:textSize="18sp"/>
-    <TextView
-            android:layout_width="253dp"
-            android:layout_height="56dp" android:id="@+id/passwordConstraint"
-            android:textColor="#E20000" android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passwordText"
-<<<<<<< HEAD
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="70dp" android:layout_marginStart="70dp"/>
-=======
+    =======
             android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.443"
     />
 >>>>>>> ff34182e934990959ab2d034de708795d1c8bc44

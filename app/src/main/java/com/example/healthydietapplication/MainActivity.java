@@ -15,25 +15,16 @@ public class MainActivity extends AppCompatActivity {
     EditText userName, password;
     Button b1;
 
-    public static final String MyPreferences = "MyPreferences" ;
-    public static final String Username = "Username";
-    public static final String Password = "Password";
-
-    SharedPreferences sharedpreferences;
-
     private ActivityMainBinding binding;
-
-    //public String usernameInput= "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        userName=(EditText)findViewById(R.id.usernameText);
-        password=(EditText)findViewById(R.id.passwordText);
-        b1=(Button)findViewById(R.id.button);
-        sharedpreferences = getSharedPreferences(MyPreferences, Context.MODE_PRIVATE);
+        userName=findViewById(R.id.usernameText);
+        password=findViewById(R.id.passwordText);
+        b1=findViewById(R.id.button);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -45,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                     binding.passwordConstraint.setText("");
                 }
                 else if(binding.usernameText.length()!=0 && binding.passwordText.length()==0){
-                    //username = binding.usernameText.getText().toString();
                     binding.fillInTheBlanks.setText("Please, fill in the blanks.");
                     binding.passwordConstraint.setText("");
                 }
@@ -54,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                     binding.passwordConstraint.setText("");
                 }
                 else if(binding.usernameText.length()!=0 && (binding.passwordText.length()!=0 && binding.passwordText.length()<8)){
-                    //username = binding.usernameText.getText().toString();
                     binding.passwordConstraint.setText("Your password must contain at least 8 characters.");
                     binding.fillInTheBlanks.setText("");
                 }
@@ -63,12 +52,10 @@ public class MainActivity extends AppCompatActivity {
                     binding.passwordConstraint.setText("Your password must contain at least 8 characters.");
                 }
                 else{
-                    String n  = userName.getText().toString();
-                    String ph  = password.getText().toString();
-                    SharedPreferences.Editor editor = sharedpreferences.edit();
-                    editor.putString(Username, n);
-                    editor.putString(Password, ph);
-                    editor.commit();
+                    SharedPreferences sp = getSharedPreferences("database", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sp.edit();
+                    editor.putString("Username", userName.getText().toString());
+                    editor.apply();
 
                     binding.fillInTheBlanks.setText("");
                     binding.passwordConstraint.setText("");

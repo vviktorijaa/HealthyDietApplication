@@ -1,8 +1,12 @@
 package com.example.healthydietapplication;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +16,17 @@ public class MyProfileActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_profile_activity);
+
+        Context context =this;
+
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        String userstring =  sp.getString("Username",null);
+
+//        SharedPreferences preferences = getSharedPreferences("database", Context.MODE_PRIVATE);
+//        String displayUsername = preferences.getString("Username", null);
+//
+        TextView username = findViewById(R.id.userName);
+        username.setText(userstring);
     }
 
     public void homeActivity(View v){

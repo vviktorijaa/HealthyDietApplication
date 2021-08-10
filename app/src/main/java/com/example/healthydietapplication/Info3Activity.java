@@ -14,10 +14,10 @@ public class Info3Activity extends AppCompatActivity {
         setContentView(R.layout.info3);
     }
 
-//    public void close(View v) {
-//        Intent intent = new Intent(v.getContext(), HomeActivity.class);
-//        startActivity(intent);
-//    }
+    public void close3(View v) {
+        Intent intent = new Intent(v.getContext(), HomeActivity.class);
+        startActivity(intent);
+    }
 
     public void next4(View v) {
         Intent intent = new Intent(v.getContext(), Info4Activity.class);

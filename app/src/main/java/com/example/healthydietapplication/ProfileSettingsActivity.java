@@ -28,4 +28,9 @@ public class ProfileSettingsActivity extends AppCompatActivity {
         Intent intent = new Intent(v.getContext(), RecipesActivity.class);
         startActivity(intent);
     }
+
+    public void logout(View v) {
+        Intent intent = new Intent(v.getContext(), MainActivity.class);
+        startActivity(intent);
+    }
 }

@@ -11,13 +11,13 @@ public class Info7Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.info6);
+        setContentView(R.layout.info7);
     }
 
-//    public void close(View v) {
-//        Intent intent = new Intent(v.getContext(), HomeActivity.class);
-//        startActivity(intent);
-//    }
+    public void close7(View v) {
+        Intent intent = new Intent(v.getContext(), HomeActivity.class);
+        startActivity(intent);
+    }
 
 //    public void next(View v) {
 //        Intent intent = new Intent(v.getContext(), Info7Activity.class);

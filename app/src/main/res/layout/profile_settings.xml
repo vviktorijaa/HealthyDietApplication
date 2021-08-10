@@ -96,10 +96,36 @@
                     android:layout_width="match_parent"
                     android:layout_height="19dp" android:id="@+id/textView53" android:textSize="25sp"
                     android:textColor="#517528"/>
-            <Button
-                    android:text="Log out"
+            <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/logout" app:backgroundTint="#517528"/>
+                    android:layout_height="31dp">
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="98dp"
+                        android:layout_height="match_parent">
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent">
+                    <Button
+                            android:text="Log out"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp" android:id="@+id/logout" app:backgroundTint="#517528"
+                            android:onClick="logout"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp">
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
     <TextView
