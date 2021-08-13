@@ -6,26 +6,26 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Info5Activity extends AppCompatActivity {
+public class Info9Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.info4);
+        setContentView(R.layout.info9);
     }
 
-    public void close5(View v) {
+    public void close9(View v) {
         Intent intent = new Intent(v.getContext(), HomeActivity.class);
         startActivity(intent);
     }
 
-    public void next6(View v) {
-        Intent intent = new Intent(v.getContext(), Info6Activity.class);
+    public void next10(View v) {
+        Intent intent = new Intent(v.getContext(), Info10Activity.class);
         startActivity(intent);
     }
 
-    public void back4(View v) {
-        Intent intent = new Intent(v.getContext(), Info4Activity.class);
+    public void back8(View v) {
+        Intent intent = new Intent(v.getContext(), Info8Activity.class);
         startActivity(intent);
     }
 }

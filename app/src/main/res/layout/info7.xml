@@ -4,10 +4,43 @@
                                                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/limeta_blurred"
+            android:id="@+id/linear_layout"
+            android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="404dp"
+            android:layout_height="317dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="70dp" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/linearLayout12">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="53dp"
+                android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="301dp"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/info_recommended_calories"
+                    android:id="@+id/imageView26"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="48dp"
+                android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
     <Button
             android:text="NEXT"
             android:layout_width="96dp"
-            android:layout_height="55dp" android:id="@+id/button22"
+            android:layout_height="55dp" android:id="@+id/button20"
             app:backgroundTint="#4C9E45" android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="30dp" android:onClick="next8"
@@ -16,37 +49,29 @@
     <Button
             android:text="BACK"
             android:layout_width="96dp"
-            android:layout_height="55dp" android:id="@+id/button21"
+            android:layout_height="55dp" android:id="@+id/button19"
             app:backgroundTint="#4C9E45" android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="30dp" android:onClick="back6"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="30dp"
             android:layout_marginStart="30dp"/>
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/limeta_blurred"
-            android:id="@+id/linear_layout"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_width="355dp"
+            android:layout_height="170dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout12" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" android:layout_marginBottom="125dp">
+        <TextView
+                android:text="Healthy Diet cares for you and provides you with the information about the ideal calorie intake for each meal of the day."
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/textView18" android:layout_weight="1"
+                android:gravity="center" android:textSize="23sp" android:textColor="#517528"/>
     </LinearLayout>
-    <ImageView
-            android:layout_width="206dp"
-            android:layout_height="339dp" app:srcCompat="@drawable/info_menu" android:id="@+id/imageView11"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="70dp"/>
-    <TextView
-            android:text="From the menu, your can travel from the home page to your profile, or maybe go to search some delicious recipes."
-            android:layout_width="334dp"
-            android:layout_height="165dp" android:id="@+id/textView31"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="120dp"
-            android:textSize="23sp" android:textColor="#517528" android:gravity="center"
-            app:layout_constraintHorizontal_bias="0.496"
-            android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/imageView11"/>
     <TextView
             android:text="X"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView28"
+            android:layout_height="wrap_content" android:id="@+id/textView23"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:textSize="30sp" android:layout_marginTop="20dp" android:layout_marginRight="20dp"
             android:layout_marginEnd="20dp" android:textColor="#517528" android:textStyle="bold"

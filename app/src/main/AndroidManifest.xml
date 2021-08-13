@@ -22,20 +22,23 @@
         <activity android:name=".EnterWeightActivity"/>
         <activity android:name=".ChooseYourGoalActivity"/>
         <activity android:name=".PhysicallyActiveActivity"/>
+        <activity android:name=".RecommendedKcalBMIActivity"/>
         <activity android:name=".HomeActivity"/>
-        <activity android:name=".MyProfileActivity"/>
-        <activity android:name=".RecipesActivity"/>
         <activity android:name=".HomeSettingsActivity"/>
-        <activity android:name=".Info2Activity"/>
+        <activity android:name=".MyProfileActivity"/>
+        <activity android:name=".ProfileSettingsActivity"/>
+        <activity android:name=".RecipesActivity"/>
         <activity android:name=".Info1Activity"/>
+        <activity android:name=".Info2Activity"/>
         <activity android:name=".Info3Activity"/>
         <activity android:name=".Info4Activity"/>
         <activity android:name=".Info5Activity"/>
         <activity android:name=".Info6Activity"/>
         <activity android:name=".Info7Activity"/>
-        <activity android:name=".ProfileSettingsActivity"/>
-        <activity android:name=".RecommendedKcalBMIActivity"/>
         <activity android:name=".Info8Activity"/>
+        <activity android:name=".Info9Activity"/>
+        <activity android:name=".Info10Activity"/>
+        <activity android:name=".Info11Activity"/>
     </application>
 
 </manifest>

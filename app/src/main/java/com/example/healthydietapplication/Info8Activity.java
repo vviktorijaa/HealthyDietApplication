@@ -19,10 +19,10 @@ public class Info8Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void next9(View v) {
-//        Intent intent = new Intent(v.getContext(), .class);
-//        startActivity(intent);
-//    }
+    public void next9(View v) {
+        Intent intent = new Intent(v.getContext(), Info9Activity.class);
+        startActivity(intent);
+    }
 
     public void back7(View v) {
         Intent intent = new Intent(v.getContext(), Info7Activity.class);
