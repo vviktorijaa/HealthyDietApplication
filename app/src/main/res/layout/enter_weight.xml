@@ -6,6 +6,18 @@
                                                    android:layout_height="match_parent"
 >
 
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pineapple_blurred"
+            android:id="@+id/linear_layout"
+            android:orientation="vertical"/>
+    <ImageView
+            android:layout_width="41dp"
+            android:layout_height="43dp" app:srcCompat="@drawable/back" android:id="@+id/imageView14"
+            android:onClick="previousActivity" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="320dp" android:layout_marginEnd="320dp" android:layout_marginTop="30dp"/>
     <Button
             android:text="Next"
             android:layout_width="132dp"
@@ -14,18 +26,6 @@
             app:layout_constraintHorizontal_bias="0.498" app:backgroundTint="#4C9E45" android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="112dp" android:onClick="nextActivity"/>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/pineapple_blurred"
-            android:id="@+id/linear_layout"
-            android:orientation="vertical" />
-    <ImageView
-            android:layout_width="45dp"
-            android:layout_height="49dp" app:srcCompat="@drawable/back" android:id="@+id/imageView14"
-            android:onClick="previousActivity" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="30dp" android:layout_marginRight="320dp" android:layout_marginEnd="320dp"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="208dp"
@@ -38,7 +38,7 @@
             android:text="...and weight in kg:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView"
-            android:textSize="35sp" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="30sp" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="90dp" android:textColor="#517528" android:textStyle="bold"/>
     <EditText

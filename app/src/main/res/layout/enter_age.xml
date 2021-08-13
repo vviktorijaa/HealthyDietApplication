@@ -9,7 +9,13 @@
             android:layout_height="match_parent"
             android:background="@drawable/pineapple_blurred"
             android:id="@+id/linear_layout"
-            android:orientation="vertical" />
+            android:orientation="vertical"/>
+    <ImageView
+            android:layout_width="41dp"
+            android:layout_height="43dp" app:srcCompat="@drawable/back" android:id="@+id/imageView10"
+            android:onClick="previousActivity" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="320dp" android:layout_marginEnd="320dp" android:layout_marginTop="30dp"/>
     <TextView
             android:layout_width="369dp"
             android:layout_height="84dp"
@@ -18,7 +24,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:textColor="#517528" android:textSize="35sp"
+            android:textColor="#517528" android:textSize="30sp"
             android:gravity="center" android:textStyle="bold" android:id="@+id/enterYourAgeText"
             android:layout_marginTop="68dp"/>
     <ProgressBar
@@ -60,10 +66,4 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ageInput" android:textSize="18sp" android:layout_marginTop="8dp"
             app:layout_constraintHorizontal_bias="0.412"/>
-    <ImageView
-            android:layout_width="45dp"
-            android:layout_height="49dp" app:srcCompat="@drawable/back" android:id="@+id/imageView10"
-            android:onClick="previousActivity" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="30dp" android:layout_marginRight="320dp" android:layout_marginEnd="320dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

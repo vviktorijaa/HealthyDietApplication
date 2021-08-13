@@ -16,7 +16,7 @@ public class PhysicallyActiveActivity extends AppCompatActivity {
         setContentView(R.layout.physically_active);
     }
 
-    public void nextActivityHome(View v){
+    public void nextActivityKcalBmi(View v){
         RadioButton choice1 = findViewById(R.id.choice1);
         RadioButton choice2 = findViewById(R.id.choice2);
         RadioButton choice3 = findViewById(R.id.choice3);
@@ -24,7 +24,7 @@ public class PhysicallyActiveActivity extends AppCompatActivity {
         TextView constraint = findViewById(R.id.exerciseConstraint);
 
         if(choice1.isChecked() || choice2.isChecked() || choice3.isChecked() || choice4.isChecked()){
-            Intent intent = new Intent(v.getContext(), HomeActivity.class);
+            Intent intent = new Intent(v.getContext(), RecommendedKcalBMIActivity.class);
             startActivity(intent);
         }
         else{

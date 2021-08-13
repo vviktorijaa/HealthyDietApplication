@@ -4,12 +4,37 @@
                                                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
+    <Button
+            android:text="NEXT"
+            android:layout_width="96dp"
+            android:layout_height="55dp" android:id="@+id/button20"
+            app:backgroundTint="#4C9E45" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp" android:onClick="next7"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"/>
+    <Button
+            android:text="BACK"
+            android:layout_width="96dp"
+            android:layout_height="55dp" android:id="@+id/button19"
+            app:backgroundTint="#4C9E45" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp" android:onClick="back5"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"/>
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/limeta_blurred"
             android:id="@+id/linear_layout"
-            android:orientation="vertical" />
+            android:orientation="vertical">
+    </LinearLayout>
+    <ImageView
+            android:layout_width="206dp"
+            android:layout_height="348dp" app:srcCompat="@drawable/info_recommended_calories"
+            android:id="@+id/imageView26"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="70dp"/>
     <TextView
             android:text="Healthy Diet cares for you and provides you with the information about the ideal calorie intake for each meal of the day."
             android:layout_width="334dp"
@@ -17,24 +42,8 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="120dp"
             android:textSize="23sp" android:textColor="#517528" android:gravity="center"
-            app:layout_constraintHorizontal_bias="0.496" android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"/>
-    <TextView
-            android:text="NEXT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView26"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="40dp" android:layout_marginRight="40dp" android:layout_marginEnd="40dp"
-            android:textSize="20sp" android:textColor="#517528" android:onClick="next7"/>
-    <TextView
-            android:text="BACK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView25"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="48dp"
-            android:textSize="20sp" android:textColor="#517528" android:onClick="back5"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"/>
+            app:layout_constraintHorizontal_bias="0.496"
+            android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/imageView26"/>
     <TextView
             android:text="X"
             android:layout_width="wrap_content"

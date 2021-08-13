@@ -34,6 +34,8 @@
         <activity android:name=".Info6Activity"/>
         <activity android:name=".Info7Activity"/>
         <activity android:name=".ProfileSettingsActivity"/>
+        <activity android:name=".RecommendedKcalBMIActivity"/>
+        <activity android:name=".Info8Activity"/>
     </application>
 
 </manifest>
