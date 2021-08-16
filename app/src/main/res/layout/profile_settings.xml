@@ -9,7 +9,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/grape_blurred"
             android:id="@+id/linear_layout"
-            android:orientation="vertical" >
+            android:orientation="vertical">
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="49dp" app:srcCompat="@drawable/back" android:id="@+id/imageView2"
@@ -23,14 +23,14 @@
             app:layout_constraintTop_toBottomOf="@+id/homeSettingsText3" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/profileMenu5" android:layout_marginTop="50dp"
-            android:layout_marginBottom="50dp">
+            android:layout_marginBottom="50dp" android:id="@+id/scrollView4">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical" android:gravity="center">
             <TextView
                     android:text="Change username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView37" android:textColor="#517528"
-                    android:textSize="28sp"/>
+                    android:textSize="27sp"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                     android:text="Change password"
                     android:layout_width="match_parent"
                     android:layout_height="51dp" android:id="@+id/textView40" android:textColor="#517528"
-                    android:textSize="28sp" android:gravity="bottom"/>
+                    android:textSize="27sp" android:gravity="bottom"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                     android:text="Change date of birth"
                     android:layout_width="match_parent"
                     android:layout_height="51dp" android:id="@+id/textView42" android:textColor="#517528"
-                    android:textSize="28sp" android:gravity="bottom"/>
+                    android:textSize="27sp" android:gravity="bottom"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                     android:text="Change gender"
                     android:layout_width="match_parent"
                     android:layout_height="51dp" android:id="@+id/textView45" android:textColor="#517528"
-                    android:textSize="28sp" android:gravity="bottom"/>
+                    android:textSize="27sp" android:gravity="bottom"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
@@ -70,7 +70,7 @@
                     android:text="Update height"
                     android:layout_width="match_parent"
                     android:layout_height="51dp" android:id="@+id/textView48" android:textColor="#517528"
-                    android:textSize="28sp" android:gravity="bottom"/>
+                    android:textSize="27sp" android:gravity="bottom"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                     android:text="Update weight"
                     android:layout_width="match_parent"
                     android:layout_height="51dp" android:id="@+id/textView50" android:textColor="#517528"
-                    android:textSize="28sp" android:gravity="bottom"/>
+                    android:textSize="27sp" android:gravity="bottom"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
@@ -90,7 +90,7 @@
                     android:text="Change goal"
                     android:layout_width="match_parent"
                     android:layout_height="51dp" android:id="@+id/textView52" android:textColor="#517528"
-                    android:textSize="28sp" android:gravity="bottom"/>
+                    android:textSize="27sp" android:gravity="bottom"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
