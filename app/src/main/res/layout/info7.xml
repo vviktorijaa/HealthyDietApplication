@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
-
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/limeta_blurred"
             android:id="@+id/linear_layout"
-            android:orientation="vertical">
-    </LinearLayout>
+            android:orientation="vertical"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="404dp"
@@ -28,7 +26,7 @@
                 android:layout_height="match_parent">
             <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/info_recommended_calories"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/info_undo"
                     android:id="@+id/imageView26"/>
         </LinearLayout>
         <LinearLayout
@@ -63,7 +61,7 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="30dp" android:layout_marginBottom="125dp">
         <TextView
-                android:text="Healthy Diet cares for you and provides you with the information about the ideal calorie intake for each meal of the day."
+                android:text="Here your can undo your  last added consumed calories or water."
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" android:id="@+id/textView18" android:layout_weight="1"
                 android:gravity="center" android:textSize="23sp" android:textColor="#517528"/>

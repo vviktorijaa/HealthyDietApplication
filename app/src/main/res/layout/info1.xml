@@ -18,7 +18,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/limeta_blurred"
             android:id="@+id/linear_layout"
-            android:orientation="vertical" android:onClick="next2"/>
+            android:orientation="vertical" android:onClick="next2" tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp"/>
     <TextView
             android:text="Welcome to Healthy Diet!"
             android:layout_width="252dp"

@@ -11,7 +11,7 @@ public class Info5Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.info4);
+        setContentView(R.layout.info5);
     }
 
     public void close5(View v) {

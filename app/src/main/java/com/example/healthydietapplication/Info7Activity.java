@@ -19,13 +19,13 @@ public class Info7Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void next8(View v) {
-        Intent intent = new Intent(v.getContext(), Info8Activity.class);
+    public void back6(View v) {
+        Intent intent = new Intent(v.getContext(), Info6Activity.class);
         startActivity(intent);
     }
 
-    public void back6(View v) {
-        Intent intent = new Intent(v.getContext(), Info6Activity.class);
+    public void next8(View v) {
+        Intent intent = new Intent(v.getContext(), Info8Activity.class);
         startActivity(intent);
     }
 }

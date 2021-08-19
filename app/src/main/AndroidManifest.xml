@@ -28,6 +28,8 @@
         <activity android:name=".MyProfileActivity"/>
         <activity android:name=".ProfileSettingsActivity"/>
         <activity android:name=".RecipesActivity"/>
+        <activity android:name=".BreakfastRecipeActivity"/>
+        <activity android:name=".SnacksRecipeActivity"/>
         <activity android:name=".RecipesCategoriesActivity"/>
         <activity android:name=".Info1Activity"/>
         <activity android:name=".Info2Activity"/>
@@ -40,6 +42,6 @@
         <activity android:name=".Info9Activity"/>
         <activity android:name=".Info10Activity"/>
         <activity android:name=".Info11Activity"/>
+        <activity android:name=".Info12Activity"/>
     </application>
-
 </manifest>

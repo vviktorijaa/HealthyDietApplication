@@ -24,13 +24,13 @@ public class RecipesActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 TextView searchText = findViewById(R.id.searchText);
-                if(searchText.getText().toString().equalsIgnoreCase("breakfast") || searchText.getText().toString().equalsIgnoreCase("bacon") || searchText.getText().toString().equalsIgnoreCase("egg")){
+                if(searchText.getText().toString().equalsIgnoreCase("breakfast") || searchText.getText().toString().equalsIgnoreCase("bacon") || searchText.getText().toString().equalsIgnoreCase("egg") || searchText.getText().toString().equalsIgnoreCase("bacon and egg cups") ){
                     b.setVisibility(View.VISIBLE);
                     b1.setVisibility(View.VISIBLE);
                     l.setVisibility(View.GONE);
                     l1.setVisibility(View.GONE);
                 }
-                if(searchText.getText().toString().equalsIgnoreCase("lunch")){
+                if(searchText.getText().toString().equalsIgnoreCase("snacks") || searchText.getText().toString().equalsIgnoreCase("angel") || searchText.getText().toString().equalsIgnoreCase("cake") || searchText.getText().toString().equalsIgnoreCase("angel food cake")){
                     l.setVisibility(View.VISIBLE);
                     l1.setVisibility(View.VISIBLE);
                     b.setVisibility(View.GONE);
@@ -58,6 +58,16 @@ public class RecipesActivity extends AppCompatActivity {
 
     public void recipesCategories(View v){
         Intent intent = new Intent(v.getContext(), RecipesCategoriesActivity.class);
+        startActivity(intent);
+    }
+
+    public void breakfast(View v){
+        Intent intent = new Intent(v.getContext(), BreakfastRecipeActivity.class);
+        startActivity(intent);
+    }
+
+    public void snack(View v){
+        Intent intent = new Intent(v.getContext(), SnacksRecipeActivity.class);
         startActivity(intent);
     }
 }

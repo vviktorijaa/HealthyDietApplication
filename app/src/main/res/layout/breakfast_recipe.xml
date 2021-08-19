@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="414dp"
+            android:layout_height="86dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/linearLayout14">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="137dp"
+                android:layout_height="match_parent" android:onClick="home">
+            <TextView
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent" android:id="@+id/homeMenu6"
+                    android:background="@drawable/rectangle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/profileMenu"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                    android:onClick="homeA"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="141dp"
+                android:layout_height="match_parent" android:onClick="profile">
+            <TextView
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent" android:id="@+id/profileMenu7"
+                    android:background="@drawable/rectangle2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    android:onClick="profileA"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="137dp"
+                android:layout_height="match_parent" android:onClick="recipes">
+            <TextView
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent" android:id="@+id/recipesMenu6"
+                    android:background="@drawable/rectangle3"
+                    app:layout_constraintStart_toEndOf="@+id/profileMenu" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                    android:onClick="recipesA" android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="41dp"
+            android:layout_height="43dp" app:srcCompat="@drawable/back" android:id="@+id/imageView52"
+            android:onClick="backToRecipesA" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" android:layout_marginLeft="30dp" android:layout_marginStart="30dp"/>
+    <TextView
+            android:text="Home"
+            android:layout_width="130dp"
+            android:layout_height="26dp" android:id="@+id/homeMenuText11"
+            android:textColor="#DEDFBE" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:gravity="center" android:layout_marginBottom="8dp"/>
+    <TextView
+            android:text="Recipes"
+            android:layout_width="129dp"
+            android:layout_height="25dp" android:id="@+id/recipesMenuText3"
+            android:textColor="@color/white" android:textSize="20sp"
+            android:textStyle="bold" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp" android:gravity="center"/>
+    <ImageView
+            android:layout_width="68dp"
+            android:layout_height="52dp" app:srcCompat="@drawable/my_profile_kremovo"
+            android:id="@+id/imageView55"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@+id/linearLayout14"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="30dp"/>
+    <ImageView
+            android:layout_width="72dp"
+            android:layout_height="53dp" app:srcCompat="@drawable/kapa_bela" android:id="@+id/imageView56"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp" android:layout_marginEnd="30dp"/>
+    <ImageView
+            android:layout_width="68dp"
+            android:layout_height="53dp" app:srcCompat="@drawable/home_kremovo" android:id="@+id/imageView54"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginBottom="30dp"/>
+    <TextView
+            android:text="My profile"
+            android:layout_width="129dp"
+            android:layout_height="25dp" android:id="@+id/profileMenuText"
+            android:textColor="#DEDFBE" android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintEnd_toEndOf="@+id/linearLayout14"
+            app:layout_constraintStart_toStartOf="parent" android:gravity="center"/>
+    <ScrollView
+            android:layout_width="326dp"
+            android:layout_height="405dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout14" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp" android:layout_marginBottom="70dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp">
+                <TextView
+                        android:text="Bacon and egg cups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" android:id="@+id/textView73" android:layout_weight="1"
+                        android:textSize="25sp" android:textColor="#517528" android:gravity="center|start"
+                        android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="137dp"
+            >
+                <ImageView
+                        android:layout_width="208dp"
+                        android:layout_height="match_parent" app:srcCompat="@drawable/bacon_recipe"
+                        android:id="@+id/imageView53" android:layout_weight="1"
+                />
+            </LinearLayout>
+            <TextView
+                    android:text="Ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp" android:id="@+id/textView84" android:textColor="#517528"
+                    android:textStyle="bold" android:textSize="23sp" android:gravity="bottom|center|start"/>
+            <TextView
+                    android:text="12 strips sugar-free bacon (about 10 ounces)"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp" android:id="@+id/textView83" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+            <TextView
+                    android:text="2 red potatoes, sliced 1/8 inch thick, rounded ends discarded"
+                    android:layout_width="match_parent"
+                    android:layout_height="55sp" android:id="@+id/textView85" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+            <TextView
+                    android:text="1 small red bell pepper, finely chopped"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" android:id="@+id/textView86" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+            <TextView
+                    android:text="12 large eggs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" android:id="@+id/textView87" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+            <TextView
+                    android:text="2 tablespoons chopped fresh chives"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" android:id="@+id/textView88" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+            <TextView
+                    android:text="Hot sauce, for serving"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" android:id="@+id/textView89" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+            <TextView
+                    android:text="Directions"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" android:id="@+id/textView90" android:textColor="#517528"
+                    android:textSize="23sp" android:gravity="bottom|center|start" android:textStyle="bold"/>
+            <TextView
+                    android:text="1. Preheat the oven to 200 degrees C. Wrap 1 piece of bacon around the inside of each cup of a 12-cup muffin tin to create rings. Put 1 slice of potato on the bottom of each cup and divide the bell pepper pieces among the cups."
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp" android:id="@+id/textView91" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+            <TextView
+                    android:text="2. Bake until the fat starts to render from the bacon (it will bubble in the bottom of each cup) and the bacon begins to crisp and turn light brown on the top edges, 10 to 12 minutes. "
+                    android:layout_width="match_parent"
+                    android:layout_height="130sp" android:id="@+id/textView104" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+            <TextView
+                    android:text="3. Remove the tin from the oven and crack an egg into each cup, making sure the yolk is inside the bacon ring. Continue baking until the bacon is crisp, the egg whites are cooked through and the yolks are still runny, about 10 minutes longer. Run an offset spatula around the edges and remove to a platter. Sprinkle with the chives and serve with hot sauce if desired. "
+                    android:layout_width="match_parent"
+                    android:layout_height="220sp" android:id="@+id/textView105" android:textColor="#517528"
+                    android:textSize="18sp" android:gravity="center|start"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

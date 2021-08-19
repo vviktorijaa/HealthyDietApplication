@@ -15,7 +15,7 @@
     </LinearLayout>
     <ProgressBar
             android:layout_width="196dp"
-            android:layout_height="189dp"
+            android:layout_height="180dp"
             android:indeterminateOnly="false"
             android:progressDrawable="@drawable/circle"
             android:progress="0"
@@ -25,7 +25,7 @@
             android:id="@+id/progressCalories" android:max="100"/>
     <ProgressBar
             android:layout_width="196dp"
-            android:layout_height="189dp"
+            android:layout_height="180dp"
             android:indeterminateOnly="false"
             android:progressDrawable="@drawable/circle1"
             android:progress="0"
@@ -34,12 +34,13 @@
             android:layout_marginTop="40dp"
             android:id="@+id/progressWater" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="25dp"
             android:layout_marginEnd="25dp" android:max="100"/>
+
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="135dp"
             android:layout_height="50dp"
             app:layout_constraintTop_toTopOf="@+id/progressWater" app:layout_constraintEnd_toEndOf="@+id/progressWater"
-            android:layout_marginTop="70dp" android:layout_marginRight="30dp" android:layout_marginEnd="30dp">
+            android:layout_marginTop="65dp" android:layout_marginRight="30dp" android:layout_marginEnd="30dp">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="60dp"
@@ -71,14 +72,13 @@
                     android:textSize="20sp" android:gravity="center|left" android:textStyle="bold"/>
         </LinearLayout>
     </LinearLayout>
-
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="135dp"
             android:layout_height="48dp"
             android:gravity="center" android:id="@+id/linearLayout"
             app:layout_constraintTop_toTopOf="@+id/progressCalories"
-            android:layout_marginTop="70dp" app:layout_constraintStart_toStartOf="@+id/progressCalories"
+            android:layout_marginTop="65dp" app:layout_constraintStart_toStartOf="@+id/progressCalories"
             android:layout_marginLeft="30dp" android:layout_marginStart="30dp">
         <LinearLayout
                 android:orientation="vertical"
@@ -114,38 +114,71 @@
         </LinearLayout>
     </LinearLayout>
     <ImageView
-            android:layout_width="46dp"
-            android:layout_height="51dp" app:srcCompat="@drawable/info_symbol" android:id="@+id/imageView17"
+            android:layout_width="40dp"
+            android:layout_height="50dp" app:srcCompat="@drawable/info_symbol" android:id="@+id/imageView17"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="20dp" android:layout_marginLeft="20dp" android:layout_marginStart="20dp"
             android:onClick="info1Activity"/>
     <ImageView
-            android:layout_width="45dp"
-            android:layout_height="52dp" app:srcCompat="@drawable/settings" android:id="@+id/imageView18"
+            android:layout_width="40dp"
+            android:layout_height="50dp" app:srcCompat="@drawable/settings" android:id="@+id/imageView18"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"
             android:onClick="settingsActivity"/>
 
     <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="317dp"
-            android:layout_height="72dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/linearLayout3"
-            app:layout_constraintTop_toBottomOf="@+id/progressCalories" android:layout_marginTop="10dp">
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/layoutAdd" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:id="@+id/linearLayout3"
+    >
         <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="141dp"
+                android:layout_width="75dp"
+                android:layout_height="match_parent">
+            <Button
+                    android:text="UNDO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/button32" android:textColor="@color/white"
+                    app:backgroundTint="#7CB877" android:onClick="undoKcal"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="75dp"
+                android:layout_height="match_parent">
+            <Button
+                    android:text="UNDO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/button34" app:backgroundTint="#5DB88E"
+                    android:textColor="@color/white" android:onClick="undoWater"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/layoutAdd"
+            app:layout_constraintTop_toBottomOf="@+id/progressCalories">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="133dp"
                 android:layout_height="match_parent">
             <Button
                     android:text="ADD CALORIES"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button8" app:backgroundTint="#7CB877"
-                    android:textSize="19sp" android:onClick="addCalories"/>
+                    android:layout_height="match_parent" android:id="@+id/addCalories" app:backgroundTint="#7CB877"
+                    android:textSize="18sp" android:onClick="addCalories" android:textColor="@color/white"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="39dp"
+                android:layout_width="37dp"
                 android:layout_height="match_parent">
         </LinearLayout>
         <LinearLayout
@@ -155,17 +188,17 @@
             <Button
                     android:text="ADD WATER"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/button9" app:backgroundTint="#5DB88E"
-                    android:textSize="19sp" android:onClick="addWater" android:textColor="@color/white"/>
+                    android:layout_height="match_parent" android:id="@+id/addWater" app:backgroundTint="#5DB88E"
+                    android:textSize="18sp" android:onClick="addWater" android:textColor="@color/white"/>
         </LinearLayout>
     </LinearLayout>
     <ScrollView
-            android:layout_width="384dp"
-            android:layout_height="234dp"
+            android:layout_width="347dp"
+            android:layout_height="149dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/scrollView2" app:layout_constraintBottom_toTopOf="@+id/profileMenu4"
-            android:layout_marginBottom="100dp" app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-            android:layout_marginTop="100dp">
+            android:layout_marginBottom="90dp" app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            android:layout_marginTop="80dp">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical">
             <TextView

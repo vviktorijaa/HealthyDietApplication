@@ -53,7 +53,7 @@
             android:ems="10"
             android:id="@+id/usernameText"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:hint="Username" android:textColorHint="#303030" android:textColor="#555555"
+            android:hint="Username" android:textColor="#555555"
             android:layout_marginLeft="70dp" android:layout_marginStart="70dp" android:layout_marginRight="70dp"
             android:layout_marginEnd="70dp" android:textSize="22sp" app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintTop_toBottomOf="@+id/textRecommendedActivity" android:layout_marginTop="55dp"/>
@@ -64,7 +64,7 @@
             android:ems="10"
             android:id="@+id/passwordText"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:hint="Password" android:textColorHint="#555555" android:layout_marginLeft="70dp"
+            android:hint="Password" android:layout_marginLeft="70dp"
             android:layout_marginStart="70dp" android:layout_marginRight="70dp" android:layout_marginEnd="70dp"
             app:layout_constraintHorizontal_bias="0.0" android:textSize="22sp"
             app:layout_constraintTop_toBottomOf="@+id/usernameText" android:layout_marginTop="30dp"/>

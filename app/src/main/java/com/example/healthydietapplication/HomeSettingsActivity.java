@@ -18,4 +18,19 @@ public class HomeSettingsActivity extends AppCompatActivity {
         Intent intent = new Intent(v.getContext(), HomeActivity.class);
         startActivity(intent);
     }
+
+    public void homeActivity(View v) {
+        Intent intent = new Intent(v.getContext(), HomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void myProfileActivity(View v) {
+        Intent intent = new Intent(v.getContext(), MyProfileActivity.class);
+        startActivity(intent);
+    }
+
+    public void recipesActivity(View v) {
+        Intent intent = new Intent(v.getContext(), RecipesActivity.class);
+        startActivity(intent);
+    }
 }

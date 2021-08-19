@@ -10,20 +10,12 @@
             android:id="@+id/linear_layout"
             android:orientation="vertical">
     </LinearLayout>
-    <TextView
-            android:text="X"
-            android:layout_width="19dp"
-            android:layout_height="36dp" android:id="@+id/textView9"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:textSize="30sp" android:layout_marginTop="20dp" android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp" android:textColor="#517528" android:textStyle="bold"
-            android:onClick="close11"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="404dp"
             android:layout_height="317dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="70dp" android:id="@+id/linearLayout5">
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/linearLayout7">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="51dp"
@@ -31,16 +23,16 @@
         </LinearLayout>
         <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="294dp"
+                android:layout_width="298dp"
                 android:layout_height="match_parent">
             <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/info10"
-                    android:id="@+id/imageView33"/>
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/info11"
+                    android:id="@+id/imageView30"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="57dp"
+                android:layout_width="53dp"
                 android:layout_height="match_parent">
         </LinearLayout>
     </LinearLayout>
@@ -48,33 +40,42 @@
             android:orientation="horizontal"
             android:layout_width="355dp"
             android:layout_height="170dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp" app:layout_constraintBottom_toBottomOf="@+id/linear_layout"
-            android:layout_marginBottom="125dp" app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+            app:layout_constraintBottom_toBottomOf="@+id/linear_layout" android:layout_marginBottom="125dp"
             android:layout_marginTop="30dp">
         <TextView
-                android:text="You can search recipes by entering a keyword..."
+                android:text="...or narrow your search results by applying filters. "
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent" android:id="@+id/textView12" android:layout_weight="1"
-                android:textSize="23sp" android:textColor="#517528" android:gravity="center"/>
+                android:layout_height="match_parent" android:id="@+id/textView17" android:layout_weight="1"
+                android:gravity="center" android:textSize="23sp" android:textColor="#517528"/>
     </LinearLayout>
+    <TextView
+            android:text="X"
+            android:layout_width="19dp"
+            android:layout_height="36dp" android:id="@+id/textView16"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="30sp" android:layout_marginTop="20dp" android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" android:textColor="#517528" android:textStyle="bold"
+            android:onClick="close12"/>
     <Button
-            android:text="NEXT"
-            android:layout_width="96dp"
-            android:layout_height="55dp" android:id="@+id/button26"
+            android:text="FINISH"
+            android:layout_width="98dp"
+            android:layout_height="55dp" android:id="@+id/button28"
             app:backgroundTint="#4C9E45" android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="30dp" android:onClick="next12"
+            android:layout_marginBottom="30dp" android:onClick="finish12"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="30dp"
-            android:layout_marginEnd="30dp"/>
+            android:layout_marginEnd="30dp" android:textColor="@color/white"/>
     <Button
             android:text="BACK"
             android:layout_width="96dp"
-            android:layout_height="55dp" android:id="@+id/button25"
+            android:layout_height="55dp" android:id="@+id/button27"
             app:backgroundTint="#4C9E45" android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="30dp" android:onClick="back10"
+            android:layout_marginBottom="30dp" android:onClick="back11"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="30dp"
-            android:layout_marginStart="30dp"/>
+            android:layout_marginStart="30dp" android:textColor="@color/white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

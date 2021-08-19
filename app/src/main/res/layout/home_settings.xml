@@ -38,7 +38,7 @@
             android:background="@drawable/rectangle"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/profileMenu"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
-    />
+            android:onClick="homeActivity"/>
     <TextView
             android:text="Home"
             android:layout_width="wrap_content"
@@ -68,7 +68,7 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/homeMenu5"
             app:layout_constraintEnd_toEndOf="@+id/homeMenu5" android:layout_marginBottom="30dp"/>
     <TextView
-            android:text="Glass size"
+            android:text="Glass size (soon)"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/glassSizeText"
             android:textSize="25sp" android:textColor="#517528"
