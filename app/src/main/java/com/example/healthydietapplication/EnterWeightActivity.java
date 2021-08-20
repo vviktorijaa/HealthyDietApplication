@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EnterWeightActivity extends AppCompatActivity {
 
+    public static double w;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class EnterWeightActivity extends AppCompatActivity {
                 weightConstraint.setText("");
             }
             else{
+                w = Double.parseDouble(weight.getText().toString());
                 Intent intent = new Intent(v.getContext(), ChooseYourGoalActivity.class);
                 startActivity(intent);
             }

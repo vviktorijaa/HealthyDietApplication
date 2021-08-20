@@ -28,9 +28,8 @@
                     android:layout_height="wrap_content" android:id="@+id/textView24" android:gravity="center"
                     android:textColor="#517528" android:textSize="25sp"/>
             <TextView
-                    android:text="TextView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView32" android:gravity="center"
+                    android:layout_height="wrap_content" android:id="@+id/userHeight" android:gravity="center"
                     android:textSize="23sp" android:textColor="#517528"/>
         </LinearLayout>
         <LinearLayout
@@ -43,9 +42,8 @@
                     android:layout_height="wrap_content" android:id="@+id/textView34" android:gravity="center"
                     android:textColor="#517528" android:textSize="25sp"/>
             <TextView
-                    android:text="TextView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView33" android:gravity="center"
+                    android:layout_height="wrap_content" android:id="@+id/userWeight" android:gravity="center"
                     android:textSize="23sp" android:textColor="#517528"/>
         </LinearLayout>
         <LinearLayout
@@ -58,9 +56,8 @@
                     android:layout_height="wrap_content" android:id="@+id/textView36" android:gravity="center"
                     android:textColor="#517528" android:textSize="25sp"/>
             <TextView
-                    android:text="TextView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView35" android:gravity="center"
+                    android:layout_height="wrap_content" android:id="@+id/userBMI" android:gravity="center"
                     android:textSize="23sp" android:textColor="#517528"/>
         </LinearLayout>
     </LinearLayout>
@@ -131,7 +128,8 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent" android:id="@+id/userName" android:layout_weight="1"
-                    android:textColor="#517528" android:textSize="35sp" android:textStyle="bold"/>
+                    android:textColor="#517528" android:textSize="35sp" android:textStyle="bold"
+                    android:gravity="center|start"/>
         </LinearLayout>
     </LinearLayout>
     <TextView

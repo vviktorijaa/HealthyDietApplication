@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -13,18 +12,20 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity{
 
     int kcal=0;
     int userInputKcalToInt=0;
     int waterGlasses=0;
     int userInputWaterToInt=0;
-    //int maxKcal=2000;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
+
+        TextView maxKcal = findViewById(R.id.maxCalories);
+        maxKcal.setText(String.valueOf(CalculateCalorieIntake.calculateMaxCalories()));
     }
 
     public void myProfileActivity(View v) {
@@ -49,12 +50,12 @@ public class HomeActivity extends AppCompatActivity {
 
     private void updateCaloriesProgressBar(){
         ProgressBar pb = findViewById(R.id.progressCalories);
-        pb.setProgress((kcal*100)/2000);
+        pb.setProgress((kcal*100)/CalculateCalorieIntake.calculateMaxCalories());
     }
 
-    private void updateWaterProgressBar(){
+    private void updateWaterProgressBar() {
         ProgressBar pb = findViewById(R.id.progressWater);
-        pb.setProgress((waterGlasses*100)/8);
+        pb.setProgress((waterGlasses * 100) / 8);
     }
 
     public void addCalories(View v) {
@@ -74,18 +75,16 @@ public class HomeActivity extends AppCompatActivity {
                     kcal += userInputKcalToInt;
                     consumedKcal.setText(String.valueOf(kcal));
                     updateCaloriesProgressBar();
-                }
-                else{
+                } else {
                     //EmptyStringException e = new EmptyStringException("Please, enter calories.");
                 }
             }
-        });
-
-        alert.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+        }).setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 dialog.dismiss();
             }
         });
+
         alert.show();
     }
 
@@ -114,7 +113,7 @@ public class HomeActivity extends AppCompatActivity {
         });
         alert.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
-
+                dialog.dismiss();
             }
         });
         alert.show();
@@ -152,6 +151,7 @@ public class HomeActivity extends AppCompatActivity {
                 waterGlasses-=userInputWaterToInt;
                 consumedWater.setText(String.valueOf(waterGlasses));
                 updateWaterProgressBar();
+
             }
         });
         alert.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {

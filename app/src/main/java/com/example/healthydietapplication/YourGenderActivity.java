@@ -11,6 +11,8 @@ import com.example.healthydietapplication.databinding.ActivityMainBinding;
 
 public class YourGenderActivity extends AppCompatActivity {
 
+    public static boolean isMale;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,7 @@ public class YourGenderActivity extends AppCompatActivity {
         RadioButton notTell = findViewById(R.id.radioButtonNotTell);
         TextView text = findViewById(R.id.genderConstraint);
         if(maleRadioButton.isChecked() || femaleRadioButton.isChecked() || notTell.isChecked()){
+            isMale = maleRadioButton.isChecked();
             Intent intent = new Intent(v.getContext(), EnterAgeActivity.class);
             startActivity(intent);
         }

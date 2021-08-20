@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import org.w3c.dom.Text;
 
 public class MyProfileActivity extends AppCompatActivity {
 
@@ -16,16 +17,15 @@ public class MyProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_profile_activity);
 
-        //Context context =this;
+        TextView userName = findViewById(R.id.userName);
+        TextView userHeight = findViewById(R.id.userHeight);
+        TextView userWeight = findViewById(R.id.userWeight);
+        TextView userBMI = findViewById(R.id.userBMI);
 
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        String userstring =  sp.getString("Username",null);
-
-//        SharedPreferences preferences = getSharedPreferences("database", Context.MODE_PRIVATE);
-//        String displayUsername = preferences.getString("Username", null);
-
-        TextView username = findViewById(R.id.userName);
-        username.setText(userstring);
+        userName.setText(MainActivity.username);
+        userHeight.setText(String.valueOf(EnterHeightActivity.h));
+        userWeight.setText(String.valueOf(EnterWeightActivity.w));
+        userBMI.setText(String.valueOf(CalculateBMI.calculate()));
     }
 
     public void homeActivity(View v){

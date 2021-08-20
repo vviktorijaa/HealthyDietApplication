@@ -1,5 +1,7 @@
 package com.example.healthydietapplication;
 
+import java.text.DecimalFormat;
+
 public class CalculateBMI {
     //Calculation: [weight (kg)/height (cm)/height (cm)]x10,000
 
@@ -11,23 +13,19 @@ public class CalculateBMI {
     Obesity = BMI of 30 or greater
     */
 
-    double weight=0;
-    double height=0;
-    double underweight = 18.5;
-    double normal = 24.9;
-    double overweight = 29.9;
-    int obesity = 30;
-    double calculatedBMI=0.0;
+    static double weight=EnterWeightActivity.w;
+    static double height=EnterHeightActivity.h;
+    static double underweight = 18.5;
+    static double normal = 24.9;
+    static double overweight = 29.9;
+    static int obesity = 30;
+    static double calculatedBMI=0.0;
+    private static DecimalFormat df2 = new DecimalFormat("#.##");
 
-
-    public CalculateBMI(double weight, double height){
-        this.weight=weight;
-        this.height=height;
-    }
-
-    public double calculate(double weight, double height){
+    public static double calculate(){
         calculatedBMI = (weight/height/height)*10000;
-        return calculatedBMI;
+        return Double.parseDouble(df2.format(calculatedBMI));
+        //return calculatedBMI;
     }
 
     public String BMIcategory(){

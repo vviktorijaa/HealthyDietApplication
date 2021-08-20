@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EnterHeightActivity extends AppCompatActivity {
 
+    public static double h;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +22,12 @@ public class EnterHeightActivity extends AppCompatActivity {
         TextView heightConstraint = findViewById(R.id.heightConstraint);
         TextView validHeight = findViewById(R.id.validHeight);
         if(height.length()!=0){
-            if(Integer.parseInt(height.getText().toString())==0){
+            if(Double.parseDouble(height.getText().toString())==0){
                 validHeight.setText("Please, enter a valid value.");
                 heightConstraint.setText("");
             }
             else{
+                h = Double.parseDouble(height.getText().toString());
                 Intent intent = new Intent(v.getContext(), EnterWeightActivity.class);
                 startActivity(intent);
             }

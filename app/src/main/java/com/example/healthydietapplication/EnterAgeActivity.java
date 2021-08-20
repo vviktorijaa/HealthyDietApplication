@@ -13,6 +13,8 @@ import static android.util.Log.d;
 
 public class EnterAgeActivity extends AppCompatActivity {
 
+    public static int a;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,11 +32,7 @@ public class EnterAgeActivity extends AppCompatActivity {
                 ageConstraint.setText("");
             }
             else{
-                SharedPreferences preferences = getSharedPreferences("database", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("Age", age.toString());
-                editor.apply();
-
+                a = Integer.parseInt(age.getText().toString());
                 Intent intent = new Intent(v.getContext(), EnterHeightActivity.class);
                 startActivity(intent);
             }
