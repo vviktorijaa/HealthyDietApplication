@@ -4,6 +4,13 @@
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
                                                    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/apple_blurred"
+            android:id="@+id/linear_layout"
+            android:orientation="vertical" tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="414dp"
@@ -128,12 +135,12 @@
                     android:layout_height="51dp" android:id="@+id/textView84" android:textColor="#517528"
                     android:textStyle="bold" android:textSize="23sp" android:gravity="bottom|center|start"/>
             <TextView
-                    android:text="12 strips sugar-free bacon (about 10 ounces)"
+                    android:text="12 strips sugar-free bacon (about 280 grams)"
                     android:layout_width="match_parent"
                     android:layout_height="60sp" android:id="@+id/textView83" android:textColor="#517528"
                     android:textSize="18sp" android:gravity="center|start"/>
             <TextView
-                    android:text="2 red potatoes, sliced 1/8 inch thick, rounded ends discarded"
+                    android:text="2 red potatoes, sliced about 3mm thick, rounded ends discarded"
                     android:layout_width="match_parent"
                     android:layout_height="55sp" android:id="@+id/textView85" android:textColor="#517528"
                     android:textSize="18sp" android:gravity="center|start"/>

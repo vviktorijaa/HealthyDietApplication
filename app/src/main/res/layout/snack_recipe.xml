@@ -101,8 +101,8 @@
             android:layout_marginBottom="8dp" app:layout_constraintEnd_toEndOf="@+id/linearLayout14"
             app:layout_constraintStart_toStartOf="parent" android:gravity="center"/>
     <ScrollView
-            android:layout_width="326dp"
-            android:layout_height="424dp"
+            android:layout_width="342dp"
+            android:layout_height="398dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout14" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="100dp" android:layout_marginBottom="80dp">
@@ -176,27 +176,27 @@
             <TextView
                     android:text="1. Preheat oven to 180 degrees C."
                     android:layout_width="match_parent"
-                    android:layout_height="50sp" android:id="@+id/textView91" android:textColor="#517528"
+                    android:layout_height="45sp" android:id="@+id/textView91" android:textColor="#517528"
                     android:textSize="18sp" android:gravity="center|start"/>
             <TextView
                     android:text="2. In a food processor spin sugar about 2 minutes until it is superfine. Sift half of the sugar with the salt the cake flour, setting the remaining sugar aside."
                     android:layout_width="match_parent"
-                    android:layout_height="130sp" android:id="@+id/textView104" android:textColor="#517528"
+                    android:layout_height="125sp" android:id="@+id/textView104" android:textColor="#517528"
                     android:textSize="18sp" android:gravity="center|start"/>
             <TextView
                     android:text="3. In a large bowl, use a balloon whisk to thoroughly combine egg whites, water, orange extract, and cream of tartar. After 2 minutes, switch to a hand mixer. Slowly sift the reserved sugar, beating continuously at medium speed. Once you have achieved medium peaks, sift enough of the flour mixture in to dust the top of the foam. Using a spatula fold in gently. Continue until all of the flour mixture is incorporated."
                     android:layout_width="match_parent"
-                    android:layout_height="270sp" android:id="@+id/textView105" android:textColor="#517528"
+                    android:layout_height="255sp" android:id="@+id/textView105" android:textColor="#517528"
                     android:textSize="18sp" android:gravity="center|start"/>
             <TextView
                     android:text="4. Carefully spoon mixture into an ungreased tube pan. Bake for 35 minutes before checking for doneness with a wooden skewer. (When inserted halfway between the inner and outer wall, the skewer should come out dry)."
                     android:layout_width="match_parent"
-                    android:layout_height="180sp" android:id="@+id/textView80" android:textSize="18sp"
+                    android:layout_height="165sp" android:id="@+id/textView80" android:textSize="18sp"
                     android:textColor="#517528" android:gravity="center|start"/>
             <TextView
                     android:text="5. Cool upside down on cooling rack for at least an hour before removing from pan."
                     android:layout_width="match_parent"
-                    android:layout_height="70sp" android:id="@+id/textView82" android:textSize="18sp"
+                    android:layout_height="65sp" android:id="@+id/textView82" android:textSize="18sp"
                     android:gravity="center|start" android:textColor="#517528"/>
         </LinearLayout>
     </ScrollView>

@@ -75,8 +75,6 @@ public class HomeActivity extends AppCompatActivity{
                     kcal += userInputKcalToInt;
                     consumedKcal.setText(String.valueOf(kcal));
                     updateCaloriesProgressBar();
-                } else {
-                    //EmptyStringException e = new EmptyStringException("Please, enter calories.");
                 }
             }
         }).setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
@@ -105,9 +103,6 @@ public class HomeActivity extends AppCompatActivity{
                     waterGlasses += userInputWaterToInt;
                     consumedWater.setText(String.valueOf(waterGlasses));
                     updateWaterProgressBar();
-                }
-                else{
-                    //EmptyStringException e = new EmptyStringException("Please, enter consumed water.");
                 }
             }
         });
