@@ -162,7 +162,12 @@
                                 android:layout_marginTop="35sp" android:textColor="#517528" android:textSize="18sp"/>
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="69dp" android:id="@+id/textView74"/>
+                                android:layout_height="wrap_content" android:id="@+id/textView74"/>
+                        <TextView
+                                android:text="Add to favourites ♥"
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp" android:id="@+id/addToFaves1" android:textColor="#517528"
+                                android:textSize="14sp"/>
                         <TextView
                                 android:text="See more >>"
                                 android:layout_width="match_parent"
@@ -220,7 +225,14 @@
                                 android:layout_marginLeft="7sp" android:layout_marginStart="7sp"/>
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="58dp" android:id="@+id/textView81"/>
+                                android:layout_height="wrap_content" android:id="@+id/textView81"/>
+                        <TextView
+                                android:text="Add to favourites ♥"
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp" android:id="@+id/addTofaves2"
+                                android:textColor="#517528"
+                                android:textSize="14sp" android:layout_marginLeft="2sp"
+                                android:layout_marginStart="2sp"/>
                         <TextView
                                 android:text="See more >>"
                                 android:layout_width="match_parent"

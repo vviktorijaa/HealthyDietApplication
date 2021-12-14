@@ -29,8 +29,8 @@
             <TextView
                     android:text="Change username"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView37" android:textColor="#517528"
-                    android:textSize="27sp"/>
+                    android:layout_height="wrap_content" android:id="@+id/changeUsername" android:textColor="#517528"
+                    android:textSize="27sp" android:onClick="changeUsername"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
@@ -39,17 +39,17 @@
             <TextView
                     android:text="Change password"
                     android:layout_width="match_parent"
-                    android:layout_height="51dp" android:id="@+id/textView40" android:textColor="#517528"
-                    android:textSize="27sp" android:gravity="bottom"/>
+                    android:layout_height="51dp" android:id="@+id/changePassword" android:textColor="#517528"
+                    android:textSize="27sp" android:gravity="bottom" android:onClick="changePassword"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
                     android:layout_height="19dp" android:id="@+id/textView41" android:textSize="25sp"
                     android:textColor="#517528"/>
             <TextView
-                    android:text="Change date of birth"
+                    android:text="Change gender"
                     android:layout_width="match_parent"
-                    android:layout_height="51dp" android:id="@+id/textView42" android:textColor="#517528"
+                    android:layout_height="51dp" android:id="@+id/changeGender" android:textColor="#517528"
                     android:textSize="27sp" android:gravity="bottom"/>
             <TextView
                     android:text="──────────────────"
@@ -57,9 +57,9 @@
                     android:layout_height="19dp" android:id="@+id/textView43" android:textSize="25sp"
                     android:textColor="#517528"/>
             <TextView
-                    android:text="Change gender"
+                    android:text="Update age"
                     android:layout_width="match_parent"
-                    android:layout_height="51dp" android:id="@+id/textView45" android:textColor="#517528"
+                    android:layout_height="51dp" android:id="@+id/updateAge" android:textColor="#517528"
                     android:textSize="27sp" android:gravity="bottom"/>
             <TextView
                     android:text="──────────────────"
@@ -69,8 +69,8 @@
             <TextView
                     android:text="Update height"
                     android:layout_width="match_parent"
-                    android:layout_height="51dp" android:id="@+id/textView48" android:textColor="#517528"
-                    android:textSize="27sp" android:gravity="bottom"/>
+                    android:layout_height="51dp" android:id="@+id/updateHeight" android:textColor="#517528"
+                    android:textSize="27sp" android:gravity="bottom" android:onClick="updateHeight"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"
@@ -79,8 +79,8 @@
             <TextView
                     android:text="Update weight"
                     android:layout_width="match_parent"
-                    android:layout_height="51dp" android:id="@+id/textView50" android:textColor="#517528"
-                    android:textSize="27sp" android:gravity="bottom"/>
+                    android:layout_height="51dp" android:id="@+id/updateWeight" android:textColor="#517528"
+                    android:textSize="27sp" android:gravity="bottom" android:onClick="updateWeight"/>
             <TextView
                     android:text="──────────────────"
                     android:layout_width="match_parent"

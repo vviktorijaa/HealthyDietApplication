@@ -1,19 +1,12 @@
 package com.example.healthydietapplication;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.healthydietapplication.databinding.ActivityMainBinding;
-
-import java.io.IOException;
-import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
 
     public static String username;
+    public static String pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     username = binding.usernameText.getText().toString();
+                    pass = binding.passwordText.getText().toString();
                     binding.fillInTheBlanks.setText("");
                     binding.passwordConstraint.setText("");
                     startActivity(new Intent(v.getContext(), YourGenderActivity.class));
@@ -67,15 +62,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-//    private void writeToFile(String data) {
-//        try {
-//            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(this.openFileOutput("file.txt", Context.MODE_PRIVATE));
-//            outputStreamWriter.write("username "+ data);
-//            outputStreamWriter.close();
-//        }
-//        catch (IOException e) {
-//            Log.e("Exception", "File write failed: " + e.toString());
-//        }
-//    }
 }
